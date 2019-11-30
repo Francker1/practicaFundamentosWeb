@@ -10,7 +10,6 @@ div.grid-container{
 }
 
 nav {
-    background-color: lightblue;
     grid-area: nav;
 }
 

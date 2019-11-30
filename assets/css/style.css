@@ -1,4 +1,6 @@
 @import "utils/reset.css";
-
-
 @import "utils/global.css";
+@import "utils/variables.css";
+
+/*Barra de navegación*/
+@import "components/nav.css";

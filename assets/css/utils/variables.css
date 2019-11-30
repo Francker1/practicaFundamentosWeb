@@ -1,0 +1,10 @@
+/*Conjunto de variables para optimizar modificaciones futuras*/
+
+
+/* color */
+:root{
+    --color-black: #2b2f31;
+    --color-black-light : #42494c;
+    --color-white: #f9fafb;
+    --color-white-dark : #dae0e7;
+}
