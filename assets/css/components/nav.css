@@ -7,9 +7,29 @@ nav.nav{
     z-index: 999;
     display: flex;
     align-items: center;
-    padding: 0 1rem;
+    padding: 1.5rem 1rem;
 }
 
-.nav > .nav__list{
+.nav > .nav__content{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: flex-end;
+}
 
+.nav > .nav__content > .nav__list{
+    list-style: none;
+    display: flex;
+    margin: 0 auto;
+}
+
+.nav > .nav__content > *,
+.nav__list > *{
+    margin-right: 1.5rem;
+}
+
+.nav > .nav__content > .nav__list > .nav__item a{
+    color: var(--color-white-dark);
+    text-decoration: none;
 }
