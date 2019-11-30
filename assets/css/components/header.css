@@ -1,0 +1,47 @@
+header.header {
+    height: calc(100vh - 70px);
+    background: url(../../img/portada/portada_desktop-compressor.jpg) no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header > .header__overlay{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    height: calc(100vh - 70px);
+}
+
+.header > .header__title {
+    color: var(--color-white);
+    z-index: 5;
+}
+
+.header > .header__title > h1 {
+    font-size: calc( 1rem + var(--size-basic) );
+}
+
+
+/* Mediaqueries */
+
+@media all and (min-width: 768px) {
+
+    .header > .header__title > h1 {
+
+        font-size: calc( 2rem + var(--size-basic) );
+    }
+}
+
+@media all and (min-width: 1024px) {
+
+    .header > .header__title > h1 {
+
+        font-size: calc( 3.5rem + var(--size-basic) );
+    }
+}

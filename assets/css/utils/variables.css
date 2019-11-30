@@ -8,3 +8,9 @@
     --color-white: #f9fafb;
     --color-white-dark : #dae0e7;
 }
+
+
+/* fuentes */
+:root{
+    --size-basic : 1rem;
+}

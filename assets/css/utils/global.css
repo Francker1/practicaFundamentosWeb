@@ -1,3 +1,8 @@
+body {
+    background-color: var(--color-black);
+}
+
+
 div.grid-container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -14,7 +19,6 @@ nav {
 }
 
 header {
-    background-color: lightgoldenrodyellow;
     grid-area: header;
 }
 
