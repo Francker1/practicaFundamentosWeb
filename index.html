@@ -61,15 +61,56 @@
             </article>
         </section>
 
-        <section>
+        <!--Form-->
+        <section class="form">
 
-            <article>
-                <div>
-                    <div>bloque izquierda</div>
-                    <div>bloque derecha</div>
+            <article class="form__container">
+                <div class="form__info">
+
+                    <!-- Crear cuenta -->
+                    <div class="form__register">
+                       <div class="create__count">
+                           <span>¿Aún no tienes una cuenta?</span>
+                           <a href="#">Crear cuenta</a>
+                       </div>
+                    </div>
+
+                    <!-- Iniciar sesión -->
+                    <div class="form__login">
+                        <div class="info__login">
+                            <h3>Inicia sesión</h3>
+                            <div class="social__login">
+                                <a href="#">Login con Facebook</a>
+                                <a href="#">Login con Google</a>
+                            </div>
+                            <div class="form__inputs">
+                                <form action="contenido.html" method="post">
+
+                                    <div class="form__group">
+                                        <label for="email">Email</label>
+                                        <input type="email" name="email" id="email" placeholder="Email">
+                                    </div>
+
+                                    <div class="form__group">
+                                        <label for="pass">Contraseña</label>
+                                        <input type="password" name="pass" id="pass" placeholder="Contraseña">
+                                        <a href="#">¿Contraseña olvidada?</a>
+                                    </div>
+
+                                    <div class="form__group">
+                                        <button type="submit">Iniciar sesión</button>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </article>
+        </section>
 
+        <section>
             <article>
                 <div>
                     <div>bloque izquierda</div>

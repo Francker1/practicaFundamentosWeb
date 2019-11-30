@@ -1,0 +1,42 @@
+section.form{
+    border: 1px solid goldenrod;
+    margin: 5rem 0;
+    padding: 5rem 0;
+}
+
+.form > .form__container{
+
+    max-width: 920px;
+    margin: 0 auto ;
+}
+
+.form > .form__container > .form__info{
+    display: flex;
+    flex-direction: row;
+}
+
+.form__info > div{
+    border: 1px solid blueviolet;
+    flex: 1 100%;
+}
+
+.form__register,
+.form__login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.form__register > .create__count,
+.form__register > .info__login{
+    display: flex;
+    flex-direction: column;
+}
+
+.form__register > .create__count{
+
+    padding: 2rem;
+    width: 50%;
+}
