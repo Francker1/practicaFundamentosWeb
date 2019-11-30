@@ -1,22 +1,19 @@
 section.form{
-    border: 1px solid goldenrod;
     margin: 5rem 0;
     padding: 5rem 0;
 }
 
 .form > .form__container{
-
     max-width: 920px;
     margin: 0 auto ;
 }
 
 .form > .form__container > .form__info{
-    display: flex;
-    flex-direction: row;
+    display: block;
+
 }
 
 .form__info > div{
-    border: 1px solid blueviolet;
     flex: 1 100%;
 }
 
@@ -25,8 +22,6 @@ section.form{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100%;
 }
 
 .form__register > .create__count,
@@ -35,8 +30,87 @@ section.form{
     flex-direction: column;
 }
 
-.form__register > .create__count{
+/* Form crear cuenta */
 
-    padding: 2rem;
-    width: 50%;
+.form__register > .create__count{
+    padding: 1.5rem;
+}
+
+.create__count > span{
+    font-size: calc( 1.5rem + var(--size-basic) );
+    text-align: center;
+}
+
+.create__count > a{
+    padding: .7rem;
+    margin-top: 20px;
+    text-align: center;
+    align-self: center;
+    border-radius: 5px;
+    border: 2px solid var(--color-white-dark);
+    background-color: transparent;
+    color: var(--color-black-light);
+    cursor: pointer;
+    text-decoration: none;
+    width: calc(100% - 5px);
+}
+
+
+/* Form login */
+.social__login{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.info__login{
+    width: 100%;
+    padding: 2rem 3rem;
+}
+
+.form__inputs{
+    margin-top: 3rem;
+}
+
+div.form__inputs  .form__group{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.form__group > input[type="email"], input[type="password"]{
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.form__group > button[type="submit"]{
+    padding: .7rem;
+    margin-top: 20px;
+    text-align: center;
+    border-radius: 5px;
+    border: 2px solid var(--color-white-dark);
+    background-color: var(--color-white);
+    color: var(--color-black-light);
+    cursor: pointer;
+    width: calc(100%);
+}
+
+/* Mediaqueries */
+@media all and (min-width: 768px){
+
+    .form > .form__container > .form__info{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .form__register > .create__count{
+        padding: 2rem 0;
+        width: 50%;
+    }
+
+    .create__count > span{
+        font-size: calc( 1.75rem + var(--size-basic) );
+        text-align: left;
+    }
+
 }

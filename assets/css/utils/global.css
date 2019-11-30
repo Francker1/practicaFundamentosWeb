@@ -31,3 +31,8 @@ footer{
     background-color: lightgray;
     grid-area: footer;
 }
+
+/* Clases globales */
+.text-center{
+    text-align: center;
+}
