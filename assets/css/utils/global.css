@@ -23,7 +23,6 @@ header {
 }
 
 main{
-    background-color: lightseagreen;
     grid-area: main;
 }
 
@@ -32,7 +31,32 @@ footer{
     grid-area: footer;
 }
 
+.overlay{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+
+}
+
 /* Clases globales */
+/* Su nomenclatura es con un solo guión para poder diferenciarlas y saber que son globales creadas ad hoc*/
+
 .text-center{
     text-align: center;
+}
+
+.flex{
+    display: flex;
+}
+
+.flex-row{
+    flex-direction: row;
+}
+
+.flex-column{
+    flex-direction: column;
 }
