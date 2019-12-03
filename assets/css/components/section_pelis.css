@@ -52,7 +52,6 @@ section.sec__pelis{
     .pelis__grid > .card{
 
         max-height: 350px;
-        max-width: 350px;
     }
 
     .card__fig > .card__title{
@@ -65,7 +64,7 @@ section.sec__pelis{
 @media all and (min-width: 1024px) {
 
     .pelis__grid{
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
 
     }
 
