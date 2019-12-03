@@ -1,5 +1,5 @@
 nav.nav{
-    background-color: var(--color-black);
+    background: linear-gradient( 180deg, #080c10 85%, rgba(8,12,16,0));
     color: var(--color-white);
     position: fixed;
     top: 0;
