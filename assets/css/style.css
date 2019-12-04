@@ -19,6 +19,10 @@
 @import "components/section_favs.css";
 
 
+/* Ficha de cada elemento */
+@import "components/header_ficha.css";
+
+
 /* Footer */
 @import "components/footer.css";
 

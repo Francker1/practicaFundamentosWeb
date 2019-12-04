@@ -1,0 +1,33 @@
+header.header__ficha{
+    height: 450px;
+    margin-top:  70px;
+    flex-direction: column;
+}
+
+.header__ficha > div{
+    /*height: 50%;*/
+    flex-basis: auto;
+}
+
+.header__ficha .img__ficha > img{
+    width: 100%;
+    height: 100%;
+}
+
+.header__ficha .info__ficha {
+    padding: 1rem;
+    border: 1px solid goldenrod;
+}
+
+@media all and (min-width: 768px) {
+
+    header.header__ficha{
+        margin-top:  70px;
+        flex-direction: row;
+    }
+
+    .header__ficha > div{
+        height: 350px;
+        flex-basis: 50%;
+    }
+}
