@@ -1,3 +1,43 @@
 section.sec__docu{
-    background-color: lightblue;
+    padding: 4vw;
+}
+
+.content__docus{
+    flex-direction: column;
+}
+
+.content__docus > div{
+    height: 450px;
+}
+
+.docu__img,
+.docu__info{
+    flex-basis: 50%;
+}
+
+.docu__img img{
+    width: 100%;
+    height: inherit;
+}
+
+.docu__info{
+    background-color: lightcoral;
+    padding: 1rem;
+}
+
+
+@media all and (min-width: 768px){
+    .docu__info{
+        padding: 2.5rem;
+    }
+}
+@media all and (min-width: 1024px){
+
+    .content__docus{
+        flex-direction: row;
+    }
+
+    .docu__info{
+        padding: 5rem;
+    }
 }
