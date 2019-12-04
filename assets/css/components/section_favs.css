@@ -1,3 +1,67 @@
 section.sec__favs{
-    border: 1px solid lightpink;
+    padding: 4vw;
+}
+
+.favs__grid{
+    flex-wrap: wrap;
+
+}
+
+.sec__favs  .favs__grid  .card{
+    flex-grow: 1;
+    justify-content: center;
+    margin-bottom: 2rem;
+
+}
+
+
+
+.favs__grid  .card{
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.favs__grid > .card img{
+    display: block;
+    width: 100%;
+}
+
+.favs__grid > .card  .card__fig{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 1rem 0;
+    background: linear-gradient(rgba(33,33,33,0), var(--color-black));
+}
+
+.favs__grid > .card__title{
+    font-size: calc(1.5rem + var(--size-basic));
+}
+
+/* Efectos */
+
+.favs__grid > .card:hover{
+    cursor: pointer;
+}
+
+
+
+
+@media all and (min-width: 768px){
+
+    .favs__grid  .card{
+        width: 46%;
+        margin: 0 .5rem 1rem .5rem;
+    }
+
+}
+
+
+@media all and (min-width: 1024px){
+    .favs__grid{
+        flex-wrap: nowrap;
+    }
+
+
 }

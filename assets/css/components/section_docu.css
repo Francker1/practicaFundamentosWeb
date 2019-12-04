@@ -6,9 +6,7 @@ section.sec__docu{
     flex-direction: column;
 }
 
-.content__docus > div{
-    height: 450px;
-}
+
 
 .docu__img,
 .docu__info{
@@ -27,6 +25,11 @@ section.sec__docu{
 
 
 @media all and (min-width: 768px){
+
+    .content__docus > div{
+       /* height: 450px;*/
+    }
+
     .docu__info{
         padding: 2.5rem;
     }
@@ -38,6 +41,6 @@ section.sec__docu{
     }
 
     .docu__info{
-        padding: 5rem;
+        /*padding: 5rem;*/
     }
 }
