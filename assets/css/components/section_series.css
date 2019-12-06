@@ -19,63 +19,16 @@ section.sec__series{
 .sec__series .series__grid .card{
     display: inline-block;
     flex-grow: 1;
-    width: 90%;
+    width: 80%;
     margin: 0 1rem 2rem 0;
 }
 
 
-.series__grid > .card{
-    position: relative;
-    border-radius: 20px;
-    overflow: hidden;
-
-}
-
-.series__grid > .card img{
-    display: block;
-    width: 100%;
-}
-
-.series__grid > .card  .card__fig{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    padding: 1rem 0;
-    background: linear-gradient(rgba(33,33,33,0), var(--color-black));
-}
-
-.series__grid > .card__title{
-    font-size: calc(1.5rem + var(--size-basic));
-}
-
-/* Efectos */
-
-.series__grid > .card:hover{
-    cursor: pointer;
-}
-
-
-
 @media all and (min-width: 768px) {
 
-
-    .series__grid > .card{
-        max-width: 50%;
-        max-height: 350px;
-        margin: 0 2rem 2rem 0;
+    .sec__series .series__grid .card{
+        width: 300px;
 
     }
-
-
-}
-
-@media all and (min-width: 1024px) {
-
-
-    .series__grid > .card{
-        max-width: 35%;
-        max-height: 350px;
-    }
-
 
 }

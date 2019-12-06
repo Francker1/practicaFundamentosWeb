@@ -12,6 +12,8 @@
 @import "components/form.css";
 @import "components/bloques.css";
 
+
+
 /* Grid de pelis, series, documentales... */
 @import "components/section_pelis.css";
 @import "components/section_series.css";
@@ -26,3 +28,6 @@
 /* Footer */
 @import "components/footer.css";
 
+
+/*Componentes*/
+@import "components/cards.css";
