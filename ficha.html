@@ -10,87 +10,206 @@
 </head>
 <body>
 
-<div class="grid-container">
+<div class="content">
     <!--Inicio barra navegación-->
     <nav class="nav">
-        <div class="logo">FLETNIX</div>
+        <div class="logo"><a href="./index.html">FLETNIX</a></div>
 
         <div class="nav__content">
             <ul class="nav__list">
                 <li class="nav__item"><a href="contenido.html#peliculas">Películas</a></li>
-                <li class="nav__item"><a href="#series">Series</a></li>
-                <li class="nav__item"><a href="#documentales">Documentales</a></li>
-                <li class="nav__item"><a href="#favoritos">Mis Favoritos</a></li>
+                <li class="nav__item"><a href="contenido.html#series">Series</a></li>
+                <li class="nav__item"><a href="contenido.html#documentales">Documentales</a></li>
+                <li class="nav__item"><a href="contenido.html#favoritos">Mis Favoritos</a></li>
             </ul>
 
-            <a href="#registro"><button class="btn btn__register">Cerrar sesión</button></a>
+            <a href="./index.html">
+                <button class="btn btn__register">Cerrar sesión</button>
+            </a>
 
             <div class="search">Buscar</div>
         </div>
     </nav>
     <!--Fin barra navegación-->
+    <div class="container">
+        <!-- Inicio header ficha -->
+        <div class="header__ficha">
 
-    <!-- Inicio header ficha -->
-    <header class="header__ficha flex">
+            <div class="title__ficha">
+                <h1>Lechugas rojas cocidas</h1>
+            </div>
+            <div class="img__ficha">
+                <a href="#" class="play"></a>
+                <img src="./assets/img/content/joker_content.jpg" alt="">
+            </div>
 
-        <div class="img__ficha">
-            <img src="./assets/img/content/joker_content.jpg" alt="">
+            <div class="info__ficha">
+                <div class="info__ficha--flex">
+                    <div class="col-data">
+                        <dl>
+                            <dt>Estudio</dt>
+                            <dd>United Actors</dd>
+
+                            <dt>Director</dt>
+                            <dd>Francisco Renault Draccula</dd>
+
+                            <dt>Cast</dt>
+                            <dd>Luis Pumares</dd>
+                            <dd>Ignatius Farray</dd>
+                            <dd>Quequé</dd>
+
+                        </dl>
+                    </div>
+                    <div class="col-sinopsis">
+                        <div>
+                            <ul class="flex micro__data">
+                                <li>98%</li>
+                                <li>94%</li>
+                                <li>1979</li>
+                                <li>Drama</li>
+                                <li>5 horas 15 min</li>
+                                <li>+18</li>
+                            </ul>
+                        </div>
+
+                        <div class="sinopsis">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A blanditiis dolore dolorem quas ut! Assumenda aut commodi, consectetur, debitis dignissimos distinctio dolorum, id incidunt ipsum modi quae quis tempore veritatis? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cumque dolorum magnam, porro totam voluptatibus! Consectetur dolores, id illum magnam nam non, quaerat quia quidem ratione repellat vel velit voluptas!</p>
+                        </div>
+
+                        <div class="info__ficha--buttons">
+                            <button>Ver</button>
+                            <button>Añadir a Mi lista</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
+        <!--Fin header-->
 
-        <div class="info__ficha">2</div>
+        <!-- Inicio main content -->
+        <main class="relacionados">
 
-    </header>
-    <!--Fin header-->
+            <section class="container__rel">
+                <article>
+                    <h2>Contenido relacionado</h2>
 
-    <!-- Inicio main content -->
-    <main>
+                    <div class="favs__grid flex">
 
-        <section>
-            <article>Bloque de pelis distintos position</article>
-        </section>
+                        <div class="card">
+                            <a href="ficha.html">
+                                <!-- <div class="overlay"></div> -->
+                                <figure>
+                                    <img src="./assets/img/content/risitas_joker.jpg" alt="Image description">
+                                    <figcaption class="card__fig">
+                                        <div class="card__title">El Juaker</div>
+                                        <div class="card__info">
+                                            <dl>
+                                                <dt>Tit:</dt>
+                                                <dd>El Juaker</dd>
 
-        <section>
+                                                <dt>Calificación:</dt>
+                                                <dd>Mayores +16</dd>
 
-            <article>
-                <div>
-                    <div>bloque izquierda</div>
-                    <div>bloque derecha</div>
-                </div>
-            </article>
+                                                <dt>Año</dt>
+                                                <dd>2018</dd>
 
-            <article>
-                <div>
-                    <div>bloque izquierda</div>
-                    <div>bloque derecha</div>
-                </div>
-            </article>
+                                                <dt>Sinopsis</dt>
+                                                <dd>Un señor que se rie raro</dd>
+                                            </dl>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
 
-            <article>
-                <div>
-                    <div>bloque izquierda</div>
-                    <div>bloque derecha</div>
-                </div>
-            </article>
+                        <div class="card">
+                            <a href="ficha.html">
+                                <!-- <div class="overlay"></div> -->
+                                <figure>
+                                    <img src="./assets/img/content/risitas_joker.jpg" alt="Image description">
+                                    <figcaption class="card__fig">
+                                        <div class="card__title">El Juaker</div>
+                                        <div class="card__info">
+                                            <dl>
+                                                <dt>Tit:</dt>
+                                                <dd>El Juaker</dd>
 
-            <article>
-                <div>
-                    <div>bloque izquierda</div>
-                    <div>bloque derecha</div>
-                </div>
-            </article>
+                                                <dt>Calificación:</dt>
+                                                <dd>Mayores +16</dd>
 
-            <article>
-                <div>
-                    <div>video 1</div>
-                    <div>video 2</div>
-                    <div>video 3</div>
-                </div>
-            </article>
-        </section>
+                                                <dt>Año</dt>
+                                                <dd>2018</dd>
 
-    </main>
-    <!-- Fin main content -->
+                                                <dt>Sinopsis</dt>
+                                                <dd>Un señor que se rie raro</dd>
+                                            </dl>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
 
+                        <div class="card">
+                            <a href="ficha.html">
+                                <!-- <div class="overlay"></div> -->
+                                <figure>
+                                    <img src="./assets/img/content/risitas_joker.jpg" alt="Image description">
+                                    <figcaption class="card__fig">
+                                        <div class="card__title">El Juaker</div>
+                                        <div class="card__info">
+                                            <dl>
+                                                <dt>Tit:</dt>
+                                                <dd>El Juaker</dd>
+
+                                                <dt>Calificación:</dt>
+                                                <dd>Mayores +16</dd>
+
+                                                <dt>Año</dt>
+                                                <dd>2018</dd>
+
+                                                <dt>Sinopsis</dt>
+                                                <dd>Un señor que se rie raro</dd>
+                                            </dl>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+
+                        <div class="card">
+                            <a href="ficha.html">
+                                <!-- <div class="overlay"></div> -->
+                                <figure>
+                                    <img src="./assets/img/content/risitas_joker.jpg" alt="Image description">
+                                    <figcaption class="card__fig">
+                                        <div class="card__title">El Juaker</div>
+                                        <div class="card__info">
+                                            <dl>
+                                                <dt>Tit:</dt>
+                                                <dd>El Juaker</dd>
+
+                                                <dt>Calificación:</dt>
+                                                <dd>Mayores +16</dd>
+
+                                                <dt>Año</dt>
+                                                <dd>2018</dd>
+
+                                                <dt>Sinopsis</dt>
+                                                <dd>Un señor que se rie raro</dd>
+                                            </dl>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+        </main>
+        <!-- Fin main content -->
+    </div>
     <!-- Inicio footer -->
     <footer class="footer">
         <section class="footer__container">

@@ -21,7 +21,7 @@
 
 /* Ficha de cada elemento */
 @import "components/header_ficha.css";
-
+@import "components/section_relacionados.css";
 
 /* Footer */
 @import "components/footer.css";
