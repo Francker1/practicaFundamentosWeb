@@ -1,0 +1,47 @@
+.relacionados section.container__rel{
+    background-color: lightslategray;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+
+.container__rel > article > div.favs__grid{
+    justify-content: space-between;
+}
+
+.container__rel > article > div.favs__grid > .card{
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+
+@media all and (min-width: 768px) {
+
+    .relacionados section{
+        padding: 2.5rem 0;
+    }
+
+    .container__rel > article > div.favs__grid{
+        justify-content: space-around;
+    }
+
+
+    .container__rel > article > div.favs__grid > .card{
+        width: 300px;
+    }
+
+}
+
+@media all and (min-width: 1024px) {
+
+    section.container__rel > article{
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    .container__rel > article > div.favs__grid > .card{
+        width: 100%;
+    }
+
+}
