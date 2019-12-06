@@ -1,0 +1,41 @@
+.card{
+
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 2rem;
+
+}
+
+.card img{
+    display: block;
+    width: 100%;
+}
+
+
+.card  .card__fig{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 1rem 0;
+    background: linear-gradient(rgba(33,33,33,0), var(--color-black));
+}
+
+.card__fig > .card__title{
+    font-size: calc(1.5rem + var(--size-basic));
+}
+
+
+.card:hover{
+    cursor: pointer;
+}
+
+
+
+@media all and (min-width: 768px) {
+
+    .card__fig > .card__title{
+        font-size: calc(1rem + var(--size-basic));
+    }
+
+}

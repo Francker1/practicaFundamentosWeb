@@ -8,36 +8,6 @@ section.sec__pelis{
     gap: 1.5rem;
 }
 
-.pelis__grid > .card{
-    position: relative;
-    border-radius: 20px;
-    overflow: hidden;
-
-}
-
-.pelis__grid > .card img{
-    display: block;
-    width: 100%;
-}
-
-.pelis__grid > .card  .card__fig{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    padding: 1rem 0;
-    background: linear-gradient(rgba(33,33,33,0), var(--color-black));
-}
-
-.card__fig > .card__title{
-    font-size: calc(1.5rem + var(--size-basic));
-}
-
-/* Efectos */
-
-.pelis__grid > .card:hover{
-    cursor: pointer;
-}
-
 
 
 /* Mediaqueries */
@@ -64,10 +34,13 @@ section.sec__pelis{
 @media all and (min-width: 1024px) {
 
     .pelis__grid{
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
 
     }
 
 
 
 }
+
+
+
