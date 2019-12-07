@@ -19,14 +19,7 @@ section.sec__pelis{
         gap: 2rem;
     }
 
-    .pelis__grid > .card{
 
-        max-height: 350px;
-    }
-
-    .card__fig > .card__title{
-        font-size: calc(1rem + var(--size-basic));
-    }
 
 }
 

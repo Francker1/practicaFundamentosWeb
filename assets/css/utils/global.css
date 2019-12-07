@@ -42,6 +42,10 @@ footer{
 
 }
 
+.content__media h2{
+    font-size: calc( .75rem + var(--size-basic) );
+}
+
 /* Clases globales */
 /* Su nomenclatura es con un solo guión para poder diferenciarlas y saber que son globales creadas ad hoc*/
 

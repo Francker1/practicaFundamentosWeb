@@ -1,41 +1,85 @@
-.card{
-
-    position: relative;
-    border-radius: 10px;
+.card {
+    background-color: var(--color-black-light);
+    border-radius: 5px;
     overflow: hidden;
-    margin-bottom: 2rem;
-
+    height: fit-content;
 }
 
-.card img{
+.card__img img {
     display: block;
     width: 100%;
 }
 
 
-.card  .card__fig{
+.card .card__link {
+    text-decoration: none;
+    display: block;
+    color: inherit;
+}
+
+.card > .card__link .card__img {
+    position: relative;
+}
+
+.card > .card__link .card__content {
+    padding: 1rem;
+}
+
+.card > .card__link .card__content > div{
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card > .card__link .card__content h4{
+    margin: 0;
+    font-size: 1.5rem;
+    font-family: var(--font-primary);
+}
+
+.card > .card__link .card__content p{
+    margin: 0;
+}
+
+/* Info tarjeta peli, serie, etc... */
+.card__info{
     position: absolute;
-    bottom: 0;
+    bottom:0 ;
+    padding: 1rem;
+    background-color: rgba( 239,84,102, 0.9);
     width: 100%;
-    padding: 1rem 0;
-    background: linear-gradient(rgba(33,33,33,0), var(--color-black));
-}
 
-.card__fig > .card__title{
-    font-size: calc(1.5rem + var(--size-basic));
-}
-
-
-.card:hover{
+    /* Animación */
+    visibility: hidden;
+    transform: translateY(100%);
+    opacity: 0;
     cursor: pointer;
+
+}
+
+.card__info dl > div{
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.card__info dt{
+    font-family: var(--font-primary);
+    font-weight: bold;
+    text-align: left;
+}
+
+.card__info dd{
+    font-size: 1rem;
+    text-align: right;
 }
 
 
 
-@media all and (min-width: 768px) {
-
-    .card__fig > .card__title{
-        font-size: calc(1rem + var(--size-basic));
-    }
-
+/* Efectos */
+.card:hover .card__info {
+    visibility: visible;
+    transform: translateY(0);
+    opacity: 1;
+    transition: all ease-in-out 400ms;
+    transition-delay: .25s;
 }
+
