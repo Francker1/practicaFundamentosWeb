@@ -72,10 +72,11 @@ section.bloques > article:nth-child(3) > .bloque__content > .bq__img{
 
 /*Bloque texto centrado*/
 .faqs__bloque{
-    background-color: darkgray;
+    background-color: var(--color-accent);
     display: flex;
     justify-content: center;
     padding: 1rem;
+
 
 }
 
@@ -94,8 +95,22 @@ section.bloques > article:nth-child(3) > .bloque__content > .bq__img{
 
 .faqs__content > a{
     text-decoration: none;
+    color: var(--color-primary);
 }
 
+.faqs__content > a::after{
+    background-color: var(--color-primary);
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: relative;
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    width: 110px;
+}
 
 
 /* --- Mediaqueries --- */
