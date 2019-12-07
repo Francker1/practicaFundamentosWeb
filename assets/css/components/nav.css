@@ -1,9 +1,9 @@
 nav.nav{
-    background: linear-gradient( 180deg, #080c10 85%, rgba(8,12,16,0));
+    background: var(--color-black);
     color: var(--color-white);
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 75%;
     z-index: 999;
     display: flex;
     align-items: center;
@@ -15,15 +15,16 @@ nav.nav{
     text-align: left;
     left: 0;
     top: 0;
-    margin-top: 1rem;
-    margin-left: 1rem;
+    width: 100%;
+    background: var(--color-black);
+    padding: 1rem;
 }
 
 
 .nav > .burger__label{
     position: absolute;
     top: 0;
-    right: 0;
+    right: -20vw;
     width: 50px;
     height: 50px;
     z-index: 9999;
@@ -79,9 +80,17 @@ nav.nav{
 /* Mediaqueries */
 @media all and (min-width: 768px) {
 
+    nav.nav{
+        width: 100%;
+    }
+
     .nav > .logo{
-        margin-top: 1.5rem;
-        margin-left: 1.5rem;
+        width: fit-content;
+        /*margin-top: 1.5rem;
+        margin-left: 1.5rem;*/
+        top:1.5rem;
+        left: 1rem;
+        padding: 0;
     }
 
     .nav > .burger__label{
