@@ -3,6 +3,7 @@
 
 /* color */
 :root{
+    --color-bg-dark: #121216;
     --color-black: #202122;
     --color-black-light : #42494c;
     --color-white: #f9fafb;
