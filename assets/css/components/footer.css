@@ -1,6 +1,6 @@
 footer.footer{
     padding: 2rem;
-    background-color: var(--color-black-light);
+    background-color: var(--color-black);
     color: var(--color-white-dark);
 }
 
@@ -26,6 +26,13 @@ footer.footer{
     padding: 1rem;
 }
 
+.footer__container > .footer__social >  .footer__logo a{
+    font-family: var(--font-primary);
+    color: var(--color-primary);
+    text-decoration: none;
+    font-size: 2rem;
+}
+
 /* RRSS */
 .footer__container > .footer__social > .footer__rrss{
     width: 100%;
@@ -38,6 +45,10 @@ footer.footer{
     margin-top: 2rem;
 }
 
+.footer__container > .footer__social > .footer__rrss > ul > li img{
+    height: 36px;
+}
+
 /* Enlaces info */
 .footer__info--1 li,
 .footer__info--2 li,
@@ -47,6 +58,16 @@ footer.footer{
 
 }
 
+.footer__legales > div > a{
+    margin-right: 1rem;
+}
+
+
+/* Efectos */
+.footer > .footer__container a:hover{
+    color: var(--color-primary);
+    opacity: .7;
+}
 
 /* Mediaqueries */
 
