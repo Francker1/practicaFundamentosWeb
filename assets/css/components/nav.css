@@ -20,10 +20,29 @@ nav.nav{
     padding: 1rem;
 }
 
+.nav > .logo a{
+    font-family: var(--font-primary);
+    color: var(--color-primary);
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.nav .btn__login{
+    width: 100%;
+    font-size: 1rem;
+    padding: .3rem 2rem;
+}
+
+
+.nav .search__input{
+    border-radius: 5px;
+    border: none;
+    padding: .5rem;
+}
 
 .nav > .burger__label{
     position: absolute;
-    top: 0;
+    top: 7px;
     right: -20vw;
     width: 50px;
     height: 50px;
@@ -40,12 +59,12 @@ nav.nav{
     content: "";
     position: absolute;
     width: 34px;
-    height: 4px;
-    background-color: gray;
+    height: 2px;
+    background-color: var(--color-white);
     left: 8px;
     top: 13px;
-    box-shadow: 0 10px 0 0 gray,
-    0 20px 0 0 gray;
+    box-shadow: 0 10px 0 0 var(--color-white),
+    0 20px 0 0 var(--color-white);
 }
 
 .nav > .nav__list{
@@ -88,11 +107,13 @@ nav.nav{
 
     .nav > .logo{
         width: fit-content;
-        /*margin-top: 1.5rem;
-        margin-left: 1.5rem;*/
-        top:1.5rem;
+        top:1rem;
         left: 1rem;
         padding: 0;
+    }
+
+    .nav > .logo a{
+        font-size: 2rem;
     }
 
 
@@ -115,6 +136,14 @@ nav.nav{
 
     .nav > .nav__list li:hover{
         cursor: pointer;
+    }
+
+    .nav .btn__login{
+        width: fit-content;
+    }
+
+    .nav .search__input{
+        padding-left: 5px;
     }
 
 }

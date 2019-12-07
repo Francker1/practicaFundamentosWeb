@@ -4,15 +4,20 @@
 @import "utils/global.css";
 @import "utils/variables.css";
 
+/*Componentes*/
+@import "components/cards.css";
+@import "components/buttons.css";
+
+
 /* Barra de navegación + header */
 @import "components/nav.css";
 @import "components/header.css";
+
 
 /* Home content */
 @import "sections/section_home_pelis.css";
 @import "components/form.css";
 @import "components/bloques.css";
-
 
 
 /* Grid de pelis, series, documentales... */
@@ -26,9 +31,6 @@
 @import "components/header_ficha.css";
 @import "sections/section_relacionados.css";
 
+
 /* Footer */
 @import "components/footer.css";
-
-
-/*Componentes*/
-@import "components/cards.css";
