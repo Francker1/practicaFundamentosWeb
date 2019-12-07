@@ -1,0 +1,16 @@
+/* Content font */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+/* Headings font */
+@font-face {
+    font-family: Fletnix;
+    src: url(../../fonts/mabrypro-regular.ttf);
+}
+
+*{
+    font-family: var(--font-secondary);
+}
+
+h1, h2, h3{
+    font-family: var(--font-primary);
+}

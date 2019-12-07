@@ -20,6 +20,10 @@ header.header {
     font-size: calc( 1rem + var(--size-basic) );
 }
 
+.header > .header__title > h1 > span{
+    font-family: var(--font-primary);
+}
+
 
 /* Mediaqueries */
 

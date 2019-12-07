@@ -3,14 +3,21 @@
 
 /* color */
 :root{
-    --color-black: #2b2f31;
+    --color-black: #202122;
     --color-black-light : #42494c;
     --color-white: #f9fafb;
     --color-white-dark : #dae0e7;
+    --color-primary : #ef5466;
 }
 
 
 /* fuentes */
 :root{
     --size-basic : 1rem;
+}
+
+/* tipografía */
+:root{
+    --font-primary: Fletnix, sans-serif;
+    --font-secondary: Open Sans, sans-serif;
 }
