@@ -35,5 +35,17 @@ section.sec__pelis{
 
 }
 
+@media all and (min-width: 1920px) {
+
+    .pelis__grid{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+    }
+
+
+
+}
+
+
 
 

@@ -9,6 +9,11 @@ section.sec__favs{
 }
 
 
+.favs__grid  .card{
+    margin-bottom: 2rem;
+}
+
+
 @media all and (min-width: 768px){
 
     .favs__grid  .card{
