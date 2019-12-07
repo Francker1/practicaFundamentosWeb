@@ -25,6 +25,30 @@ header.header {
 }
 
 
+
+/* Efectos */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+span.fade--in{
+    animation: fadeIn 1s ease-in 1s;
+    animation-fill-mode: forwards;
+}
+
+span.fade--in-2{
+    animation: fadeIn 1s ease-in 2s;
+    animation-fill-mode: forwards;
+}
+
+
+
 /* Mediaqueries */
 
 @media all and (min-width: 768px) {
