@@ -127,6 +127,7 @@ nav.nav{
         justify-content: flex-end;
         margin: 0;
         height: unset;
+        align-items: center;
     }
 
     .nav > .nav__list li{
