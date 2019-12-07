@@ -8,22 +8,22 @@
 @import "components/header.css";
 
 /* Home content */
-@import "components/section_home_pelis.css";
+@import "sections/section_home_pelis.css";
 @import "components/form.css";
 @import "components/bloques.css";
 
 
 
 /* Grid de pelis, series, documentales... */
-@import "components/section_pelis.css";
-@import "components/section_series.css";
-@import "components/section_docu.css";
-@import "components/section_favs.css";
+@import "sections/section_pelis.css";
+@import "sections/section_series.css";
+@import "sections/section_docu.css";
+@import "sections/section_favs.css";
 
 
 /* Ficha de cada elemento */
 @import "components/header_ficha.css";
-@import "components/section_relacionados.css";
+@import "sections/section_relacionados.css";
 
 /* Footer */
 @import "components/footer.css";

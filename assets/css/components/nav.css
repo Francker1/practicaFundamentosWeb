@@ -1,35 +1,120 @@
 nav.nav{
-    background: linear-gradient( 180deg, #080c10 85%, rgba(8,12,16,0));
+    background: var(--color-black);
     color: var(--color-white);
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 75%;
     z-index: 999;
     display: flex;
     align-items: center;
     padding: 1.5rem 1rem;
 }
 
-.nav > .nav__content{
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
+.nav > .logo{
+    position: fixed;
+    text-align: left;
+    left: 0;
+    top: 0;
     width: 100%;
-    justify-content: flex-end;
+    background: var(--color-black);
+    padding: 1rem;
 }
 
-.nav > .nav__content > .nav__list{
+
+.nav > .burger__label{
+    position: absolute;
+    top: 0;
+    right: -20vw;
+    width: 50px;
+    height: 50px;
+    z-index: 9999;
+    font-size: 40px;
+}
+
+#burger-checkbox {
+    display: none;
+}
+
+
+.nav > .burger__label:before {
+    content: "";
+    position: absolute;
+    width: 34px;
+    height: 4px;
+    background-color: gray;
+    left: 8px;
+    top: 13px;
+    box-shadow: 0 10px 0 0 gray,
+    0 20px 0 0 gray;
+}
+
+.nav > .nav__list{
+    display: none;
     list-style: none;
-    display: flex;
-    margin: 0;
+    margin-top: 51px;
+    flex: 1 100%;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    height: 100vh;
+    flex-direction: column;
+    padding: 0;
+    text-align: center;
 }
 
-.nav > .nav__content > *,
-.nav__list > *{
-    margin-right: 1.5rem;
+.nav > .nav__list li{
+    font-size: 1.5rem;
+    margin: 0 0 1.5rem 0;
 }
 
-.nav > .nav__content > .nav__list > .nav__item a{
+
+.nav > .nav__list > .nav__item a{
     color: var(--color-white-dark);
     text-decoration: none;
+}
+
+
+#burger-checkbox:checked ~ .nav__list {
+    display: flex;
+}
+
+
+
+/* Mediaqueries */
+@media all and (min-width: 768px) {
+
+    nav.nav{
+        width: 100%;
+    }
+
+    .nav > .logo{
+        width: fit-content;
+        /*margin-top: 1.5rem;
+        margin-left: 1.5rem;*/
+        top:1.5rem;
+        left: 1rem;
+        padding: 0;
+    }
+
+
+    .nav > .burger__label{
+        display: none;
+    }
+
+    .nav > .nav__list{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin: 0;
+        height: unset;
+    }
+
+    .nav > .nav__list li{
+        font-size: 1rem;
+        margin: 0 1.5rem 0 0;
+    }
+
+    .nav > .nav__list li:hover{
+        cursor: pointer;
+    }
+
 }
