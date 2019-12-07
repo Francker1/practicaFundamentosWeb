@@ -8,6 +8,7 @@
 .card__img img {
     display: block;
     width: 100%;
+    height: 270px;
 }
 
 
@@ -22,7 +23,7 @@
 }
 
 .card > .card__link .card__content {
-    padding: 1rem;
+    display: none;
 }
 
 .card > .card__link .card__content > div{
@@ -40,20 +41,15 @@
     margin: 0;
 }
 
+
 /* Info tarjeta peli, serie, etc... */
 .card__info{
-    position: absolute;
+    position: relative;
     bottom:0 ;
     padding: 1rem;
     background-color: rgba( 239,84,102, 0.9);
     width: 100%;
-
-    /* Animación */
-    visibility: hidden;
-    transform: translateY(100%);
-    opacity: 0;
     cursor: pointer;
-
 }
 
 .card__info dl > div{
@@ -73,13 +69,40 @@
 }
 
 
+/* Mediaqueries */
 
-/* Efectos */
-.card:hover .card__info {
-    visibility: visible;
-    transform: translateY(0);
-    opacity: 1;
-    transition: all ease-in-out 400ms;
-    transition-delay: .25s;
+@media all and (min-width: 1024px) {
+
+
+    .card__img img {
+        height: auto;
+    }
+
+    .card__info{
+        position: absolute;
+
+        /* Animación */
+        visibility: hidden;
+        transform: translateY(100%);
+        opacity: 0;
+
+    }
+
+    .card > .card__link .card__content {
+        display: block;
+        padding: 1rem;
+    }
+
+    /* Efectos */
+    .card:hover .card__info {
+
+
+        visibility: visible;
+        transform: translateY(0);
+        opacity: 1;
+        transition: all ease-in-out 400ms;
+        transition-delay: .25s;
+    }
+
 }
 
