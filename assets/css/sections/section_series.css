@@ -1,8 +1,7 @@
 section.sec__series{
     padding: 4vw;
-    background-color: lightseagreen;
+    background-color: var(--color-accent);
 }
-
 
 
 /* Pruebas para crear un scroll horizontal sin necesidad de usar javasxript, queda cutre porque se tiene que usar la
@@ -22,6 +21,30 @@ section.sec__series{
     width: 80%;
     margin: 0 1rem 2rem 0;
 }
+
+
+/* Estilos del scroll */
+
+.series__grid::-webkit-scrollbar {
+    height: .7rem;
+}
+
+/* Estilos barra (thumb) de scroll */
+.series__grid::-webkit-scrollbar-thumb {
+    background: var(--color-primary);
+    border-radius: 4px;
+}
+
+.series__grid::-webkit-scrollbar-thumb:active {
+    background-color: var(--color-black);
+}
+
+/* Estilos track de scroll */
+.series__grid::-webkit-scrollbar-track {
+    background: var(--color-white-dark);
+    border-radius: 4px;
+}
+
 
 
 @media all and (min-width: 768px) {
