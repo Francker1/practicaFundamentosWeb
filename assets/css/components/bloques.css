@@ -1,5 +1,5 @@
 section.bloques{
-    color: var(--color-white-dark);
+    color: var(--color-white);
 }
 
 
@@ -10,6 +10,8 @@ section.bloques{
     height: 520px;
 }
 
+
+
 .bloque__content{
     align-items: flex-start;
     flex-direction: column;
@@ -17,13 +19,11 @@ section.bloques{
 
 .bloque__content > .bq__img{
     position: relative;
-    background: url(../../img/content/series_content.jpg) center no-repeat;
     background-size: cover;
-
 }
 
 .bloque__content  .content{
-    /*padding: 4rem;*/
+    z-index: 2;
     width: 75%;
     margin: 0 auto;
 }
@@ -34,8 +34,25 @@ section.bloques{
 
 }
 
+.bloque__content > .bq__img > .content  button.btn-bloque{
+    font-size: 1rem;
+}
+
+.bq__img--1{
+    background: url(../../img/content/series_content.jpg) center no-repeat;
+
+}
+
 .bg__img--2{
     background: url(../../img/content/joker_content.jpg) center no-repeat;
+}
+
+.bg__img--3{
+    background: url(../../img/content/silicon-valley-fim.jpg) center no-repeat;
+}
+
+.bg__img--4{
+    background: url(../../img/content/felix-rdez-fuente.jpg) center no-repeat;
 }
 
 .photo{
@@ -84,14 +101,6 @@ section.bloques > article:nth-child(3) > .bloque__content > .bq__img{
 
     .bloque__content{
         flex-direction: row;
-    }
-
-    .bloque__content > .bq__img{
-        /*padding: 12rem 0 0 4rem;*/
-    }
-
-    .bloque__content > .bq__txt--dch{
-/*        padding: 12rem 0 0 6rem;*/
     }
 
     .bloque__content > .bq__txt--dch,

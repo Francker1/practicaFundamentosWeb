@@ -64,3 +64,7 @@ footer{
 .opacity-0{
     opacity: 0;
 }
+
+.color-primary{
+    color: var(--color-primary);
+}
