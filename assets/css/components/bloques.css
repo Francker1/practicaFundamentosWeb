@@ -36,6 +36,8 @@ section.bloques{
 
 .bloque__content > .bq__img > .content  button.btn-bloque{
     font-size: 1rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
 }
 
 .bq__img--1{
@@ -103,11 +105,6 @@ section.bloques > article:nth-child(3) > .bloque__content > .bq__img{
         flex-direction: row;
     }
 
-    .bloque__content > .bq__txt--dch,
-    .bloque__content > .bq__img{
-        font-size: calc( 1.5rem + var(--size-basic) );
-    }
-
     section.bloques > article:nth-child(3) > .bloque__content > .bq__img{
         order: 0;
     }
@@ -121,5 +118,14 @@ section.bloques > article:nth-child(3) > .bloque__content > .bq__img{
 
     .faqs__content > h4{
         font-size: 2.5rem;
+    }
+}
+
+
+@media all and (min-width: 1024px) {
+
+    .bloque__content > .bq__txt--dch,
+    .bloque__content > .bq__img{
+        font-size: calc( 1.5rem + var(--size-basic) );
     }
 }
