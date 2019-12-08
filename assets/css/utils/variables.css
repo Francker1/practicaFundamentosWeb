@@ -3,14 +3,27 @@
 
 /* color */
 :root{
-    --color-black: #2b2f31;
+    --color-bg-dark: #121216;
+    --color-black: #202122;
     --color-black-light : #42494c;
     --color-white: #f9fafb;
     --color-white-dark : #dae0e7;
+    --color-primary : #ef5466;
+    --color-accent : #26303C;
+
+    /*Social colors*/
+    --color-fb : #3b5998;
+    --color-ggl : #dd4b39;
 }
 
 
 /* fuentes */
 :root{
     --size-basic : 1rem;
+}
+
+/* tipografía */
+:root{
+    --font-primary: Fletnix, sans-serif;
+    --font-secondary: Open Sans, sans-serif;
 }

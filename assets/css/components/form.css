@@ -1,6 +1,6 @@
 section.form{
     margin: 5rem 0;
-    padding: 5rem 0;
+    padding: 10rem 0;
 }
 
 .form > .form__container{
@@ -9,12 +9,22 @@ section.form{
 }
 
 .form > .form__container > .form__info{
-    display: block;
+    display: flex;
+    flex-direction: column;
 
 }
 
 .form__info > div{
     flex: 1 100%;
+}
+
+/* Cambio de orden para que en móvil se vea primero el login */
+.form__register{
+    order: 1;
+}
+
+.form__login{
+    order: 0;
 }
 
 .form__register,
@@ -38,30 +48,41 @@ section.form{
 
 .create__count > span{
     font-size: calc( 1.5rem + var(--size-basic) );
+    font-family: var(--font-primary);
+    font-weight: bold;
     text-align: center;
 }
 
 .create__count > a{
-    padding: .7rem;
-    margin-top: 20px;
-    text-align: center;
-    align-self: center;
-    border-radius: 5px;
-    border: 2px solid var(--color-white-dark);
-    background-color: transparent;
-    color: var(--color-black-light);
-    cursor: pointer;
-    text-decoration: none;
-    width: calc(100% - 5px);
+    margin-top: 2rem;
+    width: 100%;
 }
 
 
 /* Form login */
+.form__login > .info__login > h3{
+    font-size: 1.5rem;
+}
+
 .social__login{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
+
+.form__login a{
+    text-decoration: none;
+    color: var(--color-white-dark);
+}
+
+.social__login a:nth-child(1){
+    color: var(--color-fb);
+}
+
+.social__login a:nth-child(2){
+    color: var(--color-ggl);
+}
+
 
 .info__login{
     width: 100%;
@@ -75,7 +96,12 @@ section.form{
 div.form__inputs  .form__group{
     display: flex;
     flex-direction: column;
-    margin-top: 1rem;
+    margin-top: 2.5rem;
+}
+
+div.form__inputs  .form__group a{
+    margin-top: 10px;
+    font-size: .8rem;
 }
 
 .form__group > input[type="email"], input[type="password"]{
@@ -83,17 +109,12 @@ div.form__inputs  .form__group{
     border-radius: 5px;
 }
 
+
 .form__group > button[type="submit"]{
-    padding: .7rem;
-    margin-top: 20px;
-    text-align: center;
-    border-radius: 5px;
-    border: 2px solid var(--color-white-dark);
-    background-color: var(--color-white);
-    color: var(--color-black-light);
-    cursor: pointer;
     width: calc(100%);
+    font-size: var(--size-basic);
 }
+
 
 /* Mediaqueries */
 @media all and (min-width: 768px){
@@ -101,6 +122,16 @@ div.form__inputs  .form__group{
     .form > .form__container > .form__info{
         display: flex;
         flex-direction: row;
+        align-items: flex-end;
+    }
+
+    /* Cambio de orden para que en desktop se vea primero el register */
+    .form__register{
+        order: 0;
+    }
+
+    .form__login{
+        order: 1;
     }
 
     .form__register > .create__count{

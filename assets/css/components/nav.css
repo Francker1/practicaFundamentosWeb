@@ -20,10 +20,29 @@ nav.nav{
     padding: 1rem;
 }
 
+.nav > .logo a{
+    font-family: var(--font-primary);
+    color: var(--color-primary);
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.nav .btn__login{
+    width: 100%;
+    font-size: 1rem;
+    padding: .3rem 2rem;
+}
+
+
+.nav .search__input{
+    border-radius: 5px;
+    border: none;
+    padding: .5rem;
+}
 
 .nav > .burger__label{
     position: absolute;
-    top: 0;
+    top: 7px;
     right: -20vw;
     width: 50px;
     height: 50px;
@@ -40,12 +59,12 @@ nav.nav{
     content: "";
     position: absolute;
     width: 34px;
-    height: 4px;
-    background-color: gray;
+    height: 2px;
+    background-color: var(--color-white);
     left: 8px;
     top: 13px;
-    box-shadow: 0 10px 0 0 gray,
-    0 20px 0 0 gray;
+    box-shadow: 0 10px 0 0 var(--color-white),
+    0 20px 0 0 var(--color-white);
 }
 
 .nav > .nav__list{
@@ -66,10 +85,19 @@ nav.nav{
     margin: 0 0 1.5rem 0;
 }
 
-
 .nav > .nav__list > .nav__item a{
     color: var(--color-white-dark);
     text-decoration: none;
+}
+
+
+.nav > .nav__list li:last-child{
+    margin-top: 2rem;
+}
+
+.nav > .nav__list li i{
+    font-size: 28px;
+    color: var(--color-primary);
 }
 
 
@@ -87,12 +115,14 @@ nav.nav{
     }
 
     .nav > .logo{
-        width: fit-content;
-        /*margin-top: 1.5rem;
-        margin-left: 1.5rem;*/
-        top:1.5rem;
+        width: auto;
+        top:1rem;
         left: 1rem;
         padding: 0;
+    }
+
+    .nav > .logo a{
+        font-size: 2rem;
     }
 
 
@@ -106,6 +136,7 @@ nav.nav{
         justify-content: flex-end;
         margin: 0;
         height: unset;
+        align-items: center;
     }
 
     .nav > .nav__list li{
@@ -113,8 +144,24 @@ nav.nav{
         margin: 0 1.5rem 0 0;
     }
 
-    .nav > .nav__list li:hover{
+    .nav > .nav__list li:hover > a{
         cursor: pointer;
+        color: var(--color-primary);
+    }
+
+    .nav > .nav__list li:last-child{
+        margin-top: unset;
+        margin-left: 1rem;
+        margin-right: 0;
+    }
+
+
+    .nav .btn__login{
+        width: fit-content;
+    }
+
+    .nav .search__input{
+        padding-left: 5px;
     }
 
 }

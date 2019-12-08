@@ -1,0 +1,32 @@
+.btn{
+    padding: .7rem;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    align-self: center;
+}
+
+.btn--ghost{
+    text-align: center;
+    align-self: center;
+    border: 2px solid var(--color-primary);
+    background-color: transparent;
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+.btn--flat{
+    border: 2px solid var(--color-primary);
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    text-decoration: none;
+}
+
+
+/* Efectos */
+
+.btn--ghost:hover{
+    background-color: var(--color-primary);
+    color: var(--color-white);
+
+}

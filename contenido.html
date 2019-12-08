@@ -14,7 +14,7 @@
     <!--Inicio barra navegación-->
     <nav class="nav">
 
-        <div class="logo"><a href="./index.html">FLETNIX</a></div>
+        <div class="logo"><a href="./index.html">Fletnix</a></div>
 
         <input type="checkbox" id="burger-checkbox">
         <label for="burger-checkbox" class="burger__label"></label>
@@ -25,9 +25,9 @@
             <li class="nav__item"><a href="#documentales">Documentales</a></li>
             <li class="nav__item"><a href="#favoritos">Mis Favoritos</a></li>
 
-            <input type="text" id="search" placeholder="Buscar">
+            <input type="text" id="search" placeholder="Buscar" class="search__input">
 
-            <li class="nav__item"><a href="./index.html"><button class="btn btn__register">Cerrar</button></a></li>
+            <li class="nav__item"><a href="./index.html" aria-label="Cerrar sesión" title="Cerrar sesión"><i class="material-icons">exit_to_app</i></a></li>
         </ul>
 
 
@@ -42,8 +42,8 @@
         <div class="header__title">
             <h1>
                 <span>Descubre.</span>
-                <span>Elige.</span>
-                <span>Disfruta.</span>
+                <span class="opacity-0 fade--in">Elige.</span>
+                <span class="opacity-0 fade--in-2">Disfruta.</span>
             </h1>
         </div>
 
@@ -51,8 +51,9 @@
     <!--Fin header-->
 
     <!-- Inicio main content -->
-    <main>
+    <main class="content__media">
 
+        <!--Películas-->
         <section id="peliculas" class="sec__pelis">
             <article class="container__pelis">
 
@@ -62,219 +63,317 @@
 
                 <div class="pelis__grid">
 
+                    <!-- Inicio cards -->
                     <div class="card ">
-                        <a href="ficha.html">
-                       <!-- <div class="overlay"></div> -->
-                            <figure>
-                                <img src="./assets/img/content/risitas_joker.jpg" alt="Image description">
-                                <figcaption class="card__fig">
-                                    <div class="card__title">El Juaker</div>
-                                    <div class="card__info">
-                                        <dl>
-                                            <dt>Tit:</dt>
-                                            <dd>El Juaker</dd>
+                        <a class="card__link" href="ficha.html" aria-label="Description of the link">
 
+                            <figure class="card__img">
+                                <img src="./assets/img/content/risitas_joker.jpg" alt="Card preview img">
+                                <div class="card__info">
+                                    <dl>
+                                        <div class="flex">
+                                            <dt>Título:</dt>
+                                            <dd>El Juaker</dd>
+                                        </div>
+
+                                        <div class="flex">
                                             <dt>Calificación:</dt>
                                             <dd>Mayores +16</dd>
+                                        </div>
 
-                                            <dt>Año</dt>
+                                        <div class="flex">
+                                            <dt>Año:</dt>
                                             <dd>2018</dd>
+                                        </div>
 
-                                            <dt>Sinopsis</dt>
-                                            <dd>Un señor que se rie raro</dd>
-                                        </dl>
-                                    </div>
-                                </figcaption>
+                                        <div class="flex">
+                                            <dt>Sinopsis:</dt>
+                                            <dd>Un señor que se rie raro y da el cante en Calzadilla de los Barros, Provincia de Badajoz</dd>
+                                        </div>
+                                    </dl>
+                                </div>
                             </figure>
+
+                            <div class="card__content">
+                                <div class="flex">
+                                    <h4>El Juaker</h4>
+                                    <p>Acción</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Fin cards -->
+
+                    <div class="card ">
+                        <a class="card__link" href="ficha.html" aria-label="Description of the link">
+
+                            <figure class="card__img">
+                                <img src="./assets/img/content/risitas_joker.jpg" alt="Card preview img">
+                                <div class="card__info">
+                                    <dl>
+                                        <div class="flex">
+                                            <dt>Título:</dt>
+                                            <dd>El Juaker</dd>
+                                        </div>
+
+                                        <div class="flex">
+                                            <dt>Calificación:</dt>
+                                            <dd>Mayores +16</dd>
+                                        </div>
+
+                                        <div class="flex">
+                                            <dt>Año:</dt>
+                                            <dd>2018</dd>
+                                        </div>
+
+                                        <div class="flex">
+                                            <dt>Sinopsis:</dt>
+                                            <dd>Un señor que se rie raro y da el cante en Calzadilla de los Barros, Provincia de Badajoz</dd>
+                                        </div>
+                                    </dl>
+                                </div>
+                            </figure>
+
+                            <div class="card__content">
+                                <div class="flex">
+                                    <h4>El Juaker</h4>
+                                    <p>Acción</p>
+                                </div>
+                            </div>
                         </a>
                     </div>
 
                     <div class="card ">
-                        <a href="ficha.html">
-                            <!-- <div class="overlay"></div> -->
-                            <figure>
-                                <img src="./assets/img/content/risitas_joker.jpg" alt="Image description">
-                                <figcaption class="card__fig">
-                                    <div class="card__title">El Juaker</div>
-                                    <div class="card__info">
-                                        <dl>
-                                            <dt>Tit:</dt>
-                                            <dd>El Juaker</dd>
+                        <a class="card__link" href="ficha.html" aria-label="Description of the link">
 
+                            <figure class="card__img">
+                                <img src="./assets/img/content/risitas_joker.jpg" alt="Card preview img">
+                                <div class="card__info">
+                                    <dl>
+                                        <div class="flex">
+                                            <dt>Título:</dt>
+                                            <dd>El Juaker</dd>
+                                        </div>
+
+                                        <div class="flex">
                                             <dt>Calificación:</dt>
                                             <dd>Mayores +16</dd>
+                                        </div>
 
-                                            <dt>Año</dt>
+                                        <div class="flex">
+                                            <dt>Año:</dt>
                                             <dd>2018</dd>
+                                        </div>
 
-                                            <dt>Sinopsis</dt>
-                                            <dd>Un señor que se rie raro</dd>
-                                        </dl>
-                                    </div>
-                                </figcaption>
+                                        <div class="flex">
+                                            <dt>Sinopsis:</dt>
+                                            <dd>Un señor que se rie raro y da el cante en Calzadilla de los Barros, Provincia de Badajoz</dd>
+                                        </div>
+                                    </dl>
+                                </div>
                             </figure>
+
+                            <div class="card__content">
+                                <div class="flex">
+                                    <h4>El Juaker</h4>
+                                    <p>Acción</p>
+                                </div>
+                            </div>
                         </a>
                     </div>
 
                     <div class="card ">
-                        <a href="ficha.html">
-                            <!-- <div class="overlay"></div> -->
-                            <figure>
-                                <img src="./assets/img/content/risitas_joker.jpg" alt="Image description">
-                                <figcaption class="card__fig">
-                                    <div class="card__title">El Juaker</div>
-                                    <div class="card__info">
-                                        <dl>
-                                            <dt>Tit:</dt>
-                                            <dd>El Juaker</dd>
+                        <a class="card__link" href="ficha.html" aria-label="Description of the link">
 
+                            <figure class="card__img">
+                                <img src="./assets/img/content/risitas_joker.jpg" alt="Card preview img">
+                                <div class="card__info">
+                                    <dl>
+                                        <div class="flex">
+                                            <dt>Título:</dt>
+                                            <dd>El Juaker</dd>
+                                        </div>
+
+                                        <div class="flex">
                                             <dt>Calificación:</dt>
                                             <dd>Mayores +16</dd>
+                                        </div>
 
-                                            <dt>Año</dt>
+                                        <div class="flex">
+                                            <dt>Año:</dt>
                                             <dd>2018</dd>
+                                        </div>
 
-                                            <dt>Sinopsis</dt>
-                                            <dd>Un señor que se rie raro</dd>
-                                        </dl>
-                                    </div>
-                                </figcaption>
+                                        <div class="flex">
+                                            <dt>Sinopsis:</dt>
+                                            <dd>Un señor que se rie raro y da el cante en Calzadilla de los Barros, Provincia de Badajoz</dd>
+                                        </div>
+                                    </dl>
+                                </div>
                             </figure>
+
+                            <div class="card__content">
+                                <div class="flex">
+                                    <h4>El Juaker</h4>
+                                    <p>Acción</p>
+                                </div>
+                            </div>
                         </a>
                     </div>
 
                     <div class="card ">
-                        <a href="ficha.html">
-                            <!-- <div class="overlay"></div> -->
-                            <figure>
-                                <img src="./assets/img/content/risitas_joker.jpg" alt="Image description">
-                                <figcaption class="card__fig">
-                                    <div class="card__title">El Juaker</div>
-                                    <div class="card__info">
-                                        <dl>
-                                            <dt>Tit:</dt>
-                                            <dd>El Juaker</dd>
+                        <a class="card__link" href="ficha.html" aria-label="Description of the link">
 
+                            <figure class="card__img">
+                                <img src="./assets/img/content/risitas_joker.jpg" alt="Card preview img">
+                                <div class="card__info">
+                                    <dl>
+                                        <div class="flex">
+                                            <dt>Título:</dt>
+                                            <dd>El Juaker</dd>
+                                        </div>
+
+                                        <div class="flex">
                                             <dt>Calificación:</dt>
                                             <dd>Mayores +16</dd>
+                                        </div>
 
-                                            <dt>Año</dt>
+                                        <div class="flex">
+                                            <dt>Año:</dt>
                                             <dd>2018</dd>
+                                        </div>
 
-                                            <dt>Sinopsis</dt>
-                                            <dd>Un señor que se rie raro</dd>
-                                        </dl>
-                                    </div>
-                                </figcaption>
+                                        <div class="flex">
+                                            <dt>Sinopsis:</dt>
+                                            <dd>Un señor que se rie raro y da el cante en Calzadilla de los Barros, Provincia de Badajoz</dd>
+                                        </div>
+                                    </dl>
+                                </div>
                             </figure>
+
+                            <div class="card__content">
+                                <div class="flex">
+                                    <h4>El Juaker</h4>
+                                    <p>Acción</p>
+                                </div>
+                            </div>
                         </a>
                     </div>
 
                     <div class="card ">
-                        <a href="ficha.html">
-                            <!-- <div class="overlay"></div> -->
-                            <figure>
-                                <img src="./assets/img/content/risitas_joker.jpg" alt="Image description">
-                                <figcaption class="card__fig">
-                                    <div class="card__title">El Juaker</div>
-                                    <div class="card__info">
-                                        <dl>
-                                            <dt>Tit:</dt>
-                                            <dd>El Juaker</dd>
+                        <a class="card__link" href="ficha.html" aria-label="Description of the link">
 
+                            <figure class="card__img">
+                                <img src="./assets/img/content/risitas_joker.jpg" alt="Card preview img">
+                                <div class="card__info">
+                                    <dl>
+                                        <div class="flex">
+                                            <dt>Título:</dt>
+                                            <dd>El Juaker</dd>
+                                        </div>
+
+                                        <div class="flex">
                                             <dt>Calificación:</dt>
                                             <dd>Mayores +16</dd>
+                                        </div>
 
-                                            <dt>Año</dt>
+                                        <div class="flex">
+                                            <dt>Año:</dt>
                                             <dd>2018</dd>
+                                        </div>
 
-                                            <dt>Sinopsis</dt>
-                                            <dd>Un señor que se rie raro</dd>
-                                        </dl>
-                                    </div>
-                                </figcaption>
+                                        <div class="flex">
+                                            <dt>Sinopsis:</dt>
+                                            <dd>Un señor que se rie raro y da el cante en Calzadilla de los Barros, Provincia de Badajoz</dd>
+                                        </div>
+                                    </dl>
+                                </div>
                             </figure>
+
+                            <div class="card__content">
+                                <div class="flex">
+                                    <h4>El Juaker</h4>
+                                    <p>Acción</p>
+                                </div>
+                            </div>
                         </a>
                     </div>
 
                     <div class="card ">
-                        <a href="ficha.html">
-                            <!-- <div class="overlay"></div> -->
-                            <figure>
-                                <img src="./assets/img/content/risitas_joker.jpg" alt="Image description">
-                                <figcaption class="card__fig">
-                                    <div class="card__title">El Juaker</div>
-                                    <div class="card__info">
-                                        <dl>
-                                            <dt>Tit:</dt>
-                                            <dd>El Juaker</dd>
+                        <a class="card__link" href="ficha.html" aria-label="Description of the link">
 
+                            <figure class="card__img">
+                                <img src="./assets/img/content/risitas_joker.jpg" alt="Card preview img">
+                                <div class="card__info">
+                                    <dl>
+                                        <div class="flex">
+                                            <dt>Título:</dt>
+                                            <dd>El Juaker</dd>
+                                        </div>
+
+                                        <div class="flex">
                                             <dt>Calificación:</dt>
                                             <dd>Mayores +16</dd>
+                                        </div>
 
-                                            <dt>Año</dt>
+                                        <div class="flex">
+                                            <dt>Año:</dt>
                                             <dd>2018</dd>
+                                        </div>
 
-                                            <dt>Sinopsis</dt>
-                                            <dd>Un señor que se rie raro</dd>
-                                        </dl>
-                                    </div>
-                                </figcaption>
+                                        <div class="flex">
+                                            <dt>Sinopsis:</dt>
+                                            <dd>Un señor que se rie raro y da el cante en Calzadilla de los Barros, Provincia de Badajoz</dd>
+                                        </div>
+                                    </dl>
+                                </div>
                             </figure>
+
+                            <div class="card__content">
+                                <div class="flex">
+                                    <h4>El Juaker</h4>
+                                    <p>Acción</p>
+                                </div>
+                            </div>
                         </a>
                     </div>
 
                     <div class="card ">
-                        <a href="ficha.html">
-                            <!-- <div class="overlay"></div> -->
-                            <figure>
-                                <img src="./assets/img/content/risitas_joker.jpg" alt="Image description">
-                                <figcaption class="card__fig">
-                                    <div class="card__title">El Juaker</div>
-                                    <div class="card__info">
-                                        <dl>
-                                            <dt>Tit:</dt>
-                                            <dd>El Juaker</dd>
+                        <a class="card__link" href="ficha.html" aria-label="Description of the link">
 
+                            <figure class="card__img">
+                                <img src="./assets/img/content/risitas_joker.jpg" alt="Card preview img">
+                                <div class="card__info">
+                                    <dl>
+                                        <div class="flex">
+                                            <dt>Título:</dt>
+                                            <dd>El Juaker</dd>
+                                        </div>
+
+                                        <div class="flex">
                                             <dt>Calificación:</dt>
                                             <dd>Mayores +16</dd>
+                                        </div>
 
-                                            <dt>Año</dt>
+                                        <div class="flex">
+                                            <dt>Año:</dt>
                                             <dd>2018</dd>
+                                        </div>
 
-                                            <dt>Sinopsis</dt>
-                                            <dd>Un señor que se rie raro</dd>
-                                        </dl>
-                                    </div>
-                                </figcaption>
+                                        <div class="flex">
+                                            <dt>Sinopsis:</dt>
+                                            <dd>Un señor que se rie raro y da el cante en Calzadilla de los Barros, Provincia de Badajoz</dd>
+                                        </div>
+                                    </dl>
+                                </div>
                             </figure>
-                        </a>
-                    </div>
 
-                    <div class="card ">
-                        <a href="ficha.html">
-                            <!-- <div class="overlay"></div> -->
-                            <figure>
-                                <img src="./assets/img/content/risitas_joker.jpg" alt="Image description">
-                                <figcaption class="card__fig">
-                                    <div class="card__title">El Juaker</div>
-                                    <div class="card__info">
-                                        <dl>
-                                            <dt>Tit:</dt>
-                                            <dd>El Juaker</dd>
-
-                                            <dt>Calificación:</dt>
-                                            <dd>Mayores +16</dd>
-
-                                            <dt>Año</dt>
-                                            <dd>2018</dd>
-
-                                            <dt>Sinopsis</dt>
-                                            <dd>Un señor que se rie raro</dd>
-                                        </dl>
-                                    </div>
-                                </figcaption>
-                            </figure>
+                            <div class="card__content">
+                                <div class="flex">
+                                    <h4>El Juaker</h4>
+                                    <p>Acción</p>
+                                </div>
+                            </div>
                         </a>
                     </div>
 
@@ -283,6 +382,7 @@
             </article>
         </section>
 
+        <!--Series-->
         <section id="series" class="sec__series">
             <article class="container__series">
 
@@ -293,191 +393,275 @@
                 <div class="series__grid">
 
                     <div class="card ">
-                        <a href="ficha.html">
-                            <!-- <div class="overlay"></div> -->
-                            <figure>
-                                <img src="./assets/img/content/risitas_joker.jpg" alt="Image description">
-                                <figcaption class="card__fig">
-                                    <div class="card__title">El Juaker</div>
-                                    <div class="card__info">
-                                        <dl>
-                                            <dt>Tit:</dt>
-                                            <dd>El Juaker</dd>
+                        <a class="card__link" href="ficha.html" aria-label="Description of the link">
 
+                            <figure class="card__img">
+                                <img src="./assets/img/content/risitas_joker.jpg" alt="Card preview img">
+                                <div class="card__info">
+                                    <dl>
+                                        <div class="flex">
+                                            <dt>Título:</dt>
+                                            <dd>El Juaker</dd>
+                                        </div>
+
+                                        <div class="flex">
                                             <dt>Calificación:</dt>
                                             <dd>Mayores +16</dd>
+                                        </div>
 
-                                            <dt>Año</dt>
+                                        <div class="flex">
+                                            <dt>Año:</dt>
                                             <dd>2018</dd>
+                                        </div>
 
-                                            <dt>Sinopsis</dt>
-                                            <dd>Un señor que se rie raro</dd>
-                                        </dl>
-                                    </div>
-                                </figcaption>
+                                        <div class="flex">
+                                            <dt>Sinopsis:</dt>
+                                            <dd>Un señor que se rie raro y da el cante en Calzadilla de los Barros, Provincia de Badajoz</dd>
+                                        </div>
+                                    </dl>
+                                </div>
                             </figure>
+
+                            <div class="card__content">
+                                <div class="flex">
+                                    <h4>El Juaker</h4>
+                                    <p>Acción</p>
+                                </div>
+                            </div>
                         </a>
                     </div>
 
                     <div class="card ">
-                        <a href="ficha.html">
-                            <!-- <div class="overlay"></div> -->
-                            <figure>
-                                <img src="./assets/img/content/risitas_joker.jpg" alt="Image description">
-                                <figcaption class="card__fig">
-                                    <div class="card__title">El Juaker</div>
-                                    <div class="card__info">
-                                        <dl>
-                                            <dt>Tit:</dt>
-                                            <dd>El Juaker</dd>
+                        <a class="card__link" href="ficha.html" aria-label="Description of the link">
 
+                            <figure class="card__img">
+                                <img src="./assets/img/content/risitas_joker.jpg" alt="Card preview img">
+                                <div class="card__info">
+                                    <dl>
+                                        <div class="flex">
+                                            <dt>Título:</dt>
+                                            <dd>El Juaker</dd>
+                                        </div>
+
+                                        <div class="flex">
                                             <dt>Calificación:</dt>
                                             <dd>Mayores +16</dd>
+                                        </div>
 
-                                            <dt>Año</dt>
+                                        <div class="flex">
+                                            <dt>Año:</dt>
                                             <dd>2018</dd>
+                                        </div>
 
-                                            <dt>Sinopsis</dt>
-                                            <dd>Un señor que se rie raro</dd>
-                                        </dl>
-                                    </div>
-                                </figcaption>
+                                        <div class="flex">
+                                            <dt>Sinopsis:</dt>
+                                            <dd>Un señor que se rie raro y da el cante en Calzadilla de los Barros, Provincia de Badajoz</dd>
+                                        </div>
+                                    </dl>
+                                </div>
                             </figure>
+
+                            <div class="card__content">
+                                <div class="flex">
+                                    <h4>El Juaker</h4>
+                                    <p>Acción</p>
+                                </div>
+                            </div>
                         </a>
                     </div>
 
                     <div class="card ">
-                        <a href="ficha.html">
-                            <!-- <div class="overlay"></div> -->
-                            <figure>
-                                <img src="./assets/img/content/risitas_joker.jpg" alt="Image description">
-                                <figcaption class="card__fig">
-                                    <div class="card__title">El Juaker</div>
-                                    <div class="card__info">
-                                        <dl>
-                                            <dt>Tit:</dt>
-                                            <dd>El Juaker</dd>
+                        <a class="card__link" href="ficha.html" aria-label="Description of the link">
 
+                            <figure class="card__img">
+                                <img src="./assets/img/content/risitas_joker.jpg" alt="Card preview img">
+                                <div class="card__info">
+                                    <dl>
+                                        <div class="flex">
+                                            <dt>Título:</dt>
+                                            <dd>El Juaker</dd>
+                                        </div>
+
+                                        <div class="flex">
                                             <dt>Calificación:</dt>
                                             <dd>Mayores +16</dd>
+                                        </div>
 
-                                            <dt>Año</dt>
+                                        <div class="flex">
+                                            <dt>Año:</dt>
                                             <dd>2018</dd>
+                                        </div>
 
-                                            <dt>Sinopsis</dt>
-                                            <dd>Un señor que se rie raro</dd>
-                                        </dl>
-                                    </div>
-                                </figcaption>
+                                        <div class="flex">
+                                            <dt>Sinopsis:</dt>
+                                            <dd>Un señor que se rie raro y da el cante en Calzadilla de los Barros, Provincia de Badajoz</dd>
+                                        </div>
+                                    </dl>
+                                </div>
                             </figure>
+
+                            <div class="card__content">
+                                <div class="flex">
+                                    <h4>El Juaker</h4>
+                                    <p>Acción</p>
+                                </div>
+                            </div>
                         </a>
                     </div>
 
                     <div class="card ">
-                        <a href="ficha.html">
-                            <!-- <div class="overlay"></div> -->
-                            <figure>
-                                <img src="./assets/img/content/risitas_joker.jpg" alt="Image description">
-                                <figcaption class="card__fig">
-                                    <div class="card__title">El Juaker</div>
-                                    <div class="card__info">
-                                        <dl>
-                                            <dt>Tit:</dt>
-                                            <dd>El Juaker</dd>
+                        <a class="card__link" href="ficha.html" aria-label="Description of the link">
 
+                            <figure class="card__img">
+                                <img src="./assets/img/content/risitas_joker.jpg" alt="Card preview img">
+                                <div class="card__info">
+                                    <dl>
+                                        <div class="flex">
+                                            <dt>Título:</dt>
+                                            <dd>El Juaker</dd>
+                                        </div>
+
+                                        <div class="flex">
                                             <dt>Calificación:</dt>
                                             <dd>Mayores +16</dd>
+                                        </div>
 
-                                            <dt>Año</dt>
+                                        <div class="flex">
+                                            <dt>Año:</dt>
                                             <dd>2018</dd>
+                                        </div>
 
-                                            <dt>Sinopsis</dt>
-                                            <dd>Un señor que se rie raro</dd>
-                                        </dl>
-                                    </div>
-                                </figcaption>
+                                        <div class="flex">
+                                            <dt>Sinopsis:</dt>
+                                            <dd>Un señor que se rie raro y da el cante en Calzadilla de los Barros, Provincia de Badajoz</dd>
+                                        </div>
+                                    </dl>
+                                </div>
                             </figure>
+
+                            <div class="card__content">
+                                <div class="flex">
+                                    <h4>El Juaker</h4>
+                                    <p>Acción</p>
+                                </div>
+                            </div>
                         </a>
                     </div>
 
                     <div class="card ">
-                        <a href="ficha.html">
-                            <!-- <div class="overlay"></div> -->
-                            <figure>
-                                <img src="./assets/img/content/risitas_joker.jpg" alt="Image description">
-                                <figcaption class="card__fig">
-                                    <div class="card__title">El Juaker</div>
-                                    <div class="card__info">
-                                        <dl>
-                                            <dt>Tit:</dt>
-                                            <dd>El Juaker</dd>
+                        <a class="card__link" href="ficha.html" aria-label="Description of the link">
 
+                            <figure class="card__img">
+                                <img src="./assets/img/content/risitas_joker.jpg" alt="Card preview img">
+                                <div class="card__info">
+                                    <dl>
+                                        <div class="flex">
+                                            <dt>Título:</dt>
+                                            <dd>El Juaker</dd>
+                                        </div>
+
+                                        <div class="flex">
                                             <dt>Calificación:</dt>
                                             <dd>Mayores +16</dd>
+                                        </div>
 
-                                            <dt>Año</dt>
+                                        <div class="flex">
+                                            <dt>Año:</dt>
                                             <dd>2018</dd>
+                                        </div>
 
-                                            <dt>Sinopsis</dt>
-                                            <dd>Un señor que se rie raro</dd>
-                                        </dl>
-                                    </div>
-                                </figcaption>
+                                        <div class="flex">
+                                            <dt>Sinopsis:</dt>
+                                            <dd>Un señor que se rie raro y da el cante en Calzadilla de los Barros, Provincia de Badajoz</dd>
+                                        </div>
+                                    </dl>
+                                </div>
                             </figure>
+
+                            <div class="card__content">
+                                <div class="flex">
+                                    <h4>El Juaker</h4>
+                                    <p>Acción</p>
+                                </div>
+                            </div>
                         </a>
                     </div>
 
                     <div class="card ">
-                        <a href="ficha.html">
-                            <!-- <div class="overlay"></div> -->
-                            <figure>
-                                <img src="./assets/img/content/risitas_joker.jpg" alt="Image description">
-                                <figcaption class="card__fig">
-                                    <div class="card__title">El Juaker</div>
-                                    <div class="card__info">
-                                        <dl>
-                                            <dt>Tit:</dt>
-                                            <dd>El Juaker</dd>
+                        <a class="card__link" href="ficha.html" aria-label="Description of the link">
 
+                            <figure class="card__img">
+                                <img src="./assets/img/content/risitas_joker.jpg" alt="Card preview img">
+                                <div class="card__info">
+                                    <dl>
+                                        <div class="flex">
+                                            <dt>Título:</dt>
+                                            <dd>El Juaker</dd>
+                                        </div>
+
+                                        <div class="flex">
                                             <dt>Calificación:</dt>
                                             <dd>Mayores +16</dd>
+                                        </div>
 
-                                            <dt>Año</dt>
+                                        <div class="flex">
+                                            <dt>Año:</dt>
                                             <dd>2018</dd>
+                                        </div>
 
-                                            <dt>Sinopsis</dt>
-                                            <dd>Un señor que se rie raro</dd>
-                                        </dl>
-                                    </div>
-                                </figcaption>
+                                        <div class="flex">
+                                            <dt>Sinopsis:</dt>
+                                            <dd>Un señor que se rie raro y da el cante en Calzadilla de los Barros, Provincia de Badajoz</dd>
+                                        </div>
+                                    </dl>
+                                </div>
                             </figure>
+
+                            <div class="card__content">
+                                <div class="flex">
+                                    <h4>El Juaker</h4>
+                                    <p>Acción</p>
+                                </div>
+                            </div>
                         </a>
                     </div>
 
                     <div class="card ">
-                        <a href="ficha.html">
-                            <!-- <div class="overlay"></div> -->
-                            <figure>
-                                <img src="./assets/img/content/risitas_joker.jpg" alt="Image description">
-                                <figcaption class="card__fig">
-                                    <div class="card__title">El Juaker</div>
-                                    <div class="card__info">
-                                        <dl>
-                                            <dt>Tit:</dt>
-                                            <dd>El Juaker</dd>
+                        <a class="card__link" href="ficha.html" aria-label="Description of the link">
 
+                            <figure class="card__img">
+                                <img src="./assets/img/content/risitas_joker.jpg" alt="Card preview img">
+                                <div class="card__info">
+                                    <dl>
+                                        <div class="flex">
+                                            <dt>Título:</dt>
+                                            <dd>El Juaker</dd>
+                                        </div>
+
+                                        <div class="flex">
                                             <dt>Calificación:</dt>
                                             <dd>Mayores +16</dd>
+                                        </div>
 
-                                            <dt>Año</dt>
+                                        <div class="flex">
+                                            <dt>Año:</dt>
                                             <dd>2018</dd>
+                                        </div>
 
-                                            <dt>Sinopsis</dt>
-                                            <dd>Un señor que se rie raro</dd>
-                                        </dl>
-                                    </div>
-                                </figcaption>
+                                        <div class="flex">
+                                            <dt>Sinopsis:</dt>
+                                            <dd>Un señor que se rie raro y da el cante en Calzadilla de los Barros, Provincia de Badajoz</dd>
+                                        </div>
+                                    </dl>
+                                </div>
                             </figure>
+
+                            <div class="card__content">
+                                <div class="flex">
+                                    <h4>El Juaker</h4>
+                                    <p>Acción</p>
+                                </div>
+                            </div>
                         </a>
                     </div>
 
@@ -486,6 +670,7 @@
             </article>
         </section>
 
+        <!--Documentales-->
         <section id="documentales" class="sec__docu">
             <article class="container__docus">
 
@@ -507,13 +692,15 @@
                         <dl>
                             <dt>De qué va:</dt>
                             <dd>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt doloremque minus modi nobis voluptas. Alias aliquam deleniti eaque, esse eum, facere illum iusto magni modi non obcaecati provident quibusdam velit?</p>
+                                <p>¿Sabías que Nuck Chorris es la razón por la que Wally se esconde? O que Nuck Chorris hizo Roma en un día. Nuck Chorris capturó todos los pokémon...desde un teléfono fijo.</p>
                             </dd>
                         </dl>
 
-                        <a href="#"><button>Ver ahora</button></a>
-                        <a href="#"><button>Añadir a lista</button></a>
-                        <a href="#"><button>Más info</button></a>
+                        <div class="btn__actions">
+                            <a href="#"><button class="btn btn--flat">Ver ahora</button></a>
+                            <a href="#"><button  class="btn btn--flat">Añadir a lista</button></a>
+                            <a href="./ficha.html"><button  class="btn btn--flat">Más info</button></a>
+                        </div>
 
                     </div>
 
@@ -521,6 +708,7 @@
             </article>
         </section>
 
+        <!--Mi lista-->
         <section id="favoritos" class="sec__favs">
             <article class="container__favs">
 
@@ -530,111 +718,198 @@
 
                 <div class="favs__grid flex">
 
-                    <div class="card">
-                        <a href="ficha.html">
-                            <!-- <div class="overlay"></div> -->
-                            <figure>
-                                <img src="./assets/img/content/risitas_joker.jpg" alt="Image description">
-                                <figcaption class="card__fig">
-                                    <div class="card__title">El Juaker</div>
-                                    <div class="card__info">
-                                        <dl>
-                                            <dt>Tit:</dt>
-                                            <dd>El Juaker</dd>
+                    <div class="card ">
+                        <a class="card__link" href="ficha.html" aria-label="Description of the link">
 
+                            <figure class="card__img">
+                                <img src="./assets/img/content/risitas_joker.jpg" alt="Card preview img">
+                                <div class="card__info">
+                                    <dl>
+                                        <div class="flex">
+                                            <dt>Título:</dt>
+                                            <dd>El Juaker</dd>
+                                        </div>
+
+                                        <div class="flex">
                                             <dt>Calificación:</dt>
                                             <dd>Mayores +16</dd>
+                                        </div>
 
-                                            <dt>Año</dt>
+                                        <div class="flex">
+                                            <dt>Año:</dt>
                                             <dd>2018</dd>
+                                        </div>
 
-                                            <dt>Sinopsis</dt>
-                                            <dd>Un señor que se rie raro</dd>
-                                        </dl>
-                                    </div>
-                                </figcaption>
+                                        <div class="flex">
+                                            <dt>Sinopsis:</dt>
+                                            <dd>Un señor que se rie raro y da el cante en Calzadilla de los Barros, Provincia de Badajoz</dd>
+                                        </div>
+                                    </dl>
+                                </div>
                             </figure>
+
+                            <div class="card__content">
+                                <div class="flex">
+                                    <h4>El Juaker</h4>
+                                    <p>Acción</p>
+                                </div>
+                            </div>
                         </a>
                     </div>
 
-                    <div class="card">
-                        <a href="ficha.html">
-                            <!-- <div class="overlay"></div> -->
-                            <figure>
-                                <img src="./assets/img/content/risitas_joker.jpg" alt="Image description">
-                                <figcaption class="card__fig">
-                                    <div class="card__title">El Juaker</div>
-                                    <div class="card__info">
-                                        <dl>
-                                            <dt>Tit:</dt>
-                                            <dd>El Juaker</dd>
+                    <div class="card ">
+                        <a class="card__link" href="ficha.html" aria-label="Description of the link">
 
+                            <figure class="card__img">
+                                <img src="./assets/img/content/risitas_joker.jpg" alt="Card preview img">
+                                <div class="card__info">
+                                    <dl>
+                                        <div class="flex">
+                                            <dt>Título:</dt>
+                                            <dd>El Juaker</dd>
+                                        </div>
+
+                                        <div class="flex">
                                             <dt>Calificación:</dt>
                                             <dd>Mayores +16</dd>
+                                        </div>
 
-                                            <dt>Año</dt>
+                                        <div class="flex">
+                                            <dt>Año:</dt>
                                             <dd>2018</dd>
+                                        </div>
 
-                                            <dt>Sinopsis</dt>
-                                            <dd>Un señor que se rie raro</dd>
-                                        </dl>
-                                    </div>
-                                </figcaption>
+                                        <div class="flex">
+                                            <dt>Sinopsis:</dt>
+                                            <dd>Un señor que se rie raro y da el cante en Calzadilla de los Barros, Provincia de Badajoz</dd>
+                                        </div>
+                                    </dl>
+                                </div>
                             </figure>
+
+                            <div class="card__content">
+                                <div class="flex">
+                                    <h4>El Juaker</h4>
+                                    <p>Acción</p>
+                                </div>
+                            </div>
                         </a>
                     </div>
 
-                    <div class="card">
-                        <a href="ficha.html">
-                            <!-- <div class="overlay"></div> -->
-                            <figure>
-                                <img src="./assets/img/content/risitas_joker.jpg" alt="Image description">
-                                <figcaption class="card__fig">
-                                    <div class="card__title">El Juaker</div>
-                                    <div class="card__info">
-                                        <dl>
-                                            <dt>Tit:</dt>
-                                            <dd>El Juaker</dd>
+                    <div class="card ">
+                        <a class="card__link" href="ficha.html" aria-label="Description of the link">
 
+                            <figure class="card__img">
+                                <img src="./assets/img/content/risitas_joker.jpg" alt="Card preview img">
+                                <div class="card__info">
+                                    <dl>
+                                        <div class="flex">
+                                            <dt>Título:</dt>
+                                            <dd>El Juaker</dd>
+                                        </div>
+
+                                        <div class="flex">
                                             <dt>Calificación:</dt>
                                             <dd>Mayores +16</dd>
+                                        </div>
 
-                                            <dt>Año</dt>
+                                        <div class="flex">
+                                            <dt>Año:</dt>
                                             <dd>2018</dd>
+                                        </div>
 
-                                            <dt>Sinopsis</dt>
-                                            <dd>Un señor que se rie raro</dd>
-                                        </dl>
-                                    </div>
-                                </figcaption>
+                                        <div class="flex">
+                                            <dt>Sinopsis:</dt>
+                                            <dd>Un señor que se rie raro y da el cante en Calzadilla de los Barros, Provincia de Badajoz</dd>
+                                        </div>
+                                    </dl>
+                                </div>
                             </figure>
+
+                            <div class="card__content">
+                                <div class="flex">
+                                    <h4>El Juaker</h4>
+                                    <p>Acción</p>
+                                </div>
+                            </div>
                         </a>
                     </div>
 
-                    <div class="card">
-                        <a href="ficha.html">
-                            <!-- <div class="overlay"></div> -->
-                            <figure>
-                                <img src="./assets/img/content/risitas_joker.jpg" alt="Image description">
-                                <figcaption class="card__fig">
-                                    <div class="card__title">El Juaker</div>
-                                    <div class="card__info">
-                                        <dl>
-                                            <dt>Tit:</dt>
-                                            <dd>El Juaker</dd>
+                    <div class="card ">
+                        <a class="card__link" href="ficha.html" aria-label="Description of the link">
 
+                            <figure class="card__img">
+                                <img src="./assets/img/content/risitas_joker.jpg" alt="Card preview img">
+                                <div class="card__info">
+                                    <dl>
+                                        <div class="flex">
+                                            <dt>Título:</dt>
+                                            <dd>El Juaker</dd>
+                                        </div>
+
+                                        <div class="flex">
                                             <dt>Calificación:</dt>
                                             <dd>Mayores +16</dd>
+                                        </div>
 
-                                            <dt>Año</dt>
+                                        <div class="flex">
+                                            <dt>Año:</dt>
                                             <dd>2018</dd>
+                                        </div>
 
-                                            <dt>Sinopsis</dt>
-                                            <dd>Un señor que se rie raro</dd>
-                                        </dl>
-                                    </div>
-                                </figcaption>
+                                        <div class="flex">
+                                            <dt>Sinopsis:</dt>
+                                            <dd>Un señor que se rie raro y da el cante en Calzadilla de los Barros, Provincia de Badajoz</dd>
+                                        </div>
+                                    </dl>
+                                </div>
                             </figure>
+
+                            <div class="card__content">
+                                <div class="flex">
+                                    <h4>El Juaker</h4>
+                                    <p>Acción</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card ">
+                        <a class="card__link" href="ficha.html" aria-label="Description of the link">
+
+                            <figure class="card__img">
+                                <img src="./assets/img/content/risitas_joker.jpg" alt="Card preview img">
+                                <div class="card__info">
+                                    <dl>
+                                        <div class="flex">
+                                            <dt>Título:</dt>
+                                            <dd>El Juaker</dd>
+                                        </div>
+
+                                        <div class="flex">
+                                            <dt>Calificación:</dt>
+                                            <dd>Mayores +16</dd>
+                                        </div>
+
+                                        <div class="flex">
+                                            <dt>Año:</dt>
+                                            <dd>2018</dd>
+                                        </div>
+
+                                        <div class="flex">
+                                            <dt>Sinopsis:</dt>
+                                            <dd>Un señor que se rie raro y da el cante en Calzadilla de los Barros, Provincia de Badajoz</dd>
+                                        </div>
+                                    </dl>
+                                </div>
+                            </figure>
+
+                            <div class="card__content">
+                                <div class="flex">
+                                    <h4>El Juaker</h4>
+                                    <p>Acción</p>
+                                </div>
+                            </div>
                         </a>
                     </div>
                 </div>
@@ -651,13 +926,13 @@
 
             <article class="footer__social">
                 <div class="footer__logo">
-                    FLETNIX
+                    <a href="./index.html">Fletnix</a>
                 </div>
                 <div class="footer__rrss">
                     <ul>
-                        <li>F</li>
-                        <li>T</li>
-                        <li>I</li>
+                        <li><a href="#"><img src="./assets/img/logos/fb-logo_white.svg" alt="Fletnix Facebook page"></a></li>
+                        <li><a href="#"><img src="./assets/img/logos/tw-logo_white.svg" alt="Fletnix Twitter page"></a></li>
+                        <li><a href="#"><img src="./assets/img/logos/insta-logo_white.svg" alt="Fletnix Instagram page"></a></li>
                     </ul>
                 </div>
             </article>

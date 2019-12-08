@@ -14,15 +14,15 @@
     <!--Inicio barra navegación-->
 
     <nav class="nav">
-        <div class="logo"><a href="./index.html">FLETNIX</a></div>
+        <div class="logo"><a href="./index.html">Fletnix</a></div>
 
         <input type="checkbox" id="burger-checkbox">
         <label for="burger-checkbox" class="burger__label"></label>
 
         <ul class="nav__list">
-            <li class="nav__item"><a href="#registro"><button class="btn btn__register">Iniciar sesión</button></a></li>
+            <li class="nav__item"><a href="#registro"><button class="btn btn--flat btn__login">Iniciar sesión</button></a></li>
 
-            <input type="text" id="search" placeholder="Buscar">
+            <input type="text" id="search" placeholder="Buscar" class="search__input">
         </ul>
 
 
@@ -37,8 +37,8 @@
         <div class="header__title">
             <h1>
                 <span>Descubre.</span>
-                <span>Elige.</span>
-                <span>Disfruta.</span>
+                <span class="opacity-0 fade--in">Elige.</span>
+                <span class="opacity-0 fade--in-2">Disfruta.</span>
             </h1>
         </div>
 
@@ -50,19 +50,39 @@
 
         <section class="figuras">
             <article class="figuras__container">
-                <figure class="figuras__img figuras_img_1">1</figure>
-                <figure class="figuras__img figuras_img_2">2</figure>
-                <figure class="figuras__img figuras_img_3">3</figure>
-                <figure class="figuras__img figuras_img_4">4</figure>
-                <figure class="figuras__img figuras_img_5">5</figure>
-                <figure class="figuras__img figuras_img_6">6</figure>
-                <figure class="figuras__img figuras_img_7">7</figure>
-                <figure class="figuras__img figuras_img_8">8</figure>
-                <figure class="figuras__img figuras_img_9">9</figure>
-                <figure class="figuras__img figuras_img_10">10</figure>
-                <figure class="figuras__img figuras_img_11">11</figure>
-                <figure class="figuras__img figuras_img_12">12</figure>
-                <figure class="figuras__img figuras_img_13">13</figure>
+                <figure class="figuras__img figuras_img_1">
+                    <img src="./assets/img/content/img_header_1.jpg" alt="Película que te gustará 1">
+                </figure>
+                <figure class="figuras__img figuras_img_2">
+                    <img src="./assets/img/content/img_header_2.jpg" alt="Película no muy buena 2">
+                </figure>
+                <figure class="figuras__img figuras_img_3">
+                    <img src="./assets/img/content/img_header_3.jpg" alt="Película aclamada 3">
+                </figure>
+                <figure class="figuras__img figuras_img_4">
+                    <img src="./assets/img/content/img_header_4.jpg" alt="Película bien valorada 4">
+                </figure>
+                <figure class="figuras__img figuras_img_5">
+                    <img src="./assets/img/content/img_header_5.jpg" alt="Documental sobre lantas">
+                </figure>
+                <figure class="figuras__img figuras_img_6">
+                    <img src="./assets/img/content/img_header_6.jpg" alt="Documental aburrido">
+                </figure>
+                <figure class="figuras__img figuras_img_7">
+                    <img src="./assets/img/content/img_header_7.jpg" alt="Documental sobre política">
+                </figure>
+                <figure class="figuras__img figuras_img_9">
+                    <img src="./assets/img/content/img_header_9.jpg" alt="Serie buena pero no tanto">
+                </figure>
+                <figure class="figuras__img figuras_img_10">
+                    <img src="./assets/img/content/img_header_10.jpg" alt="Reality de cocina">
+                </figure>
+                <figure class="figuras__img figuras_img_11">
+                    <img src="./assets/img/content/img_header_11.jpg" alt="Documental naturaleza">
+                </figure>
+                <figure class="figuras__img figuras_img_12">
+                    <img src="./assets/img/content/img_header_12.jpg" alt="Partido de futbol americano">
+                </figure>
             </article>
         </section>
 
@@ -76,7 +96,7 @@
                     <div class="form__register">
                        <div class="create__count">
                            <span>¿Aún no disfrutas de FLETNIX?</span>
-                           <a href="#">Prueba un mes gratis</a>
+                           <a href="#" class="btn btn--flat">Prueba un mes gratis</a>
                        </div>
                     </div>
 
@@ -96,17 +116,17 @@
 
                                     <div class="form__group">
                                         <label for="email">Email</label>
-                                        <input type="email" name="email" id="email" placeholder="Email">
+                                        <input type="email" name="email" id="email" placeholder="Email" required>
                                     </div>
 
                                     <div class="form__group">
                                         <label for="pass">Contraseña</label>
-                                        <input type="password" name="pass" id="pass" placeholder="Contraseña">
+                                        <input type="password" name="pass" id="pass" placeholder="Contraseña" required>
                                         <a href="#">¿Contraseña olvidada?</a>
                                     </div>
 
                                     <div class="form__group">
-                                        <button type="submit">Iniciar sesión</button>
+                                        <button type="submit" class="btn btn--ghost">Iniciar sesión</button>
                                     </div>
 
                                 </form>
@@ -124,13 +144,16 @@
             <article class="bloques__container">
                 <div class="flex bloque__content">
 
-                    <div class="photo bq__img">
+
+                    <div class="photo bq__img bq__img--1">
+                        <div class="overlay"></div>
                         <div class="content">
-                            <p>Las mejores series del momento: Lisicon Llavey, Stringer Thangs, Mick y Rorty...</p>
+                            <p>Nace <span class="color-primary">FLETNIX</span>, la primera plataforma de contenido para disléxicos</p>
                         </div>
                     </div>
 
                     <div class="photo bq__txt--dch bg__img--2">
+                        <div class="overlay"></div>
                         <div class="content">
                             <p>Disfruta de las películas más taquilleras y sé el primero en hacer spoilers</p>
                         </div>
@@ -141,18 +164,17 @@
 
             <article class="bloques__container">
                 <div class="flex bloque__content">
-
-
-
                     <div class="photo bq__txt--dch">
                         <div class="content">
-                           <p>Disfruta de las películas más taquilleras y sé el primero en hacer spoilers</p>
+                           <p>Por sólo 999,99 Yuanes al mes y la escritura de tu casa</p>
                         </div>
                     </div>
 
-                    <div class="photo bq__img">
+                    <div class="photo bq__img bg__img--3">
+                        <div class="overlay"></div>
                         <div class="content">
-                            <p>Las mejores series: Lisicon Llavey, Stringer Thangs, Mick y Rorty...</p>
+                            <p>Las mejores series: Lisicon Llavey, Stringer Thangs, Mick y Rorty o La Pepa de Casal...</p>
+                            <a href="#registro"><button class="btn btn--ghost btn-bloque">Probar 1 mes</button></a>
                         </div>
                     </div>
 
@@ -162,15 +184,16 @@
             <article class="bloques__container">
                 <div class="flex bloque__content">
 
-                    <div class="photo bq__img">
+                    <div class="photo bq__img bg__img--4">
+                        <div class="overlay"></div>
                         <div class="content">
-                            <p>Las mejores series del momento: Lisicon Llavey, Stringer Thangs, Mick y Rorty...</p>
+                            <p>Grandes documentales, mejores comentarios del director</p>
                         </div>
                     </div>
 
                     <div class="photo bq__txt--dch">
                         <div class="content">
-                            <p>Disfruta de las películas más taquilleras y sé el primero en hacer spoilers</p>
+                            <p>Tú decides cuando cancelar tu suscripción...otra cosa es que te hagamos caso</p>
                         </div>
                     </div>
                 </div>
@@ -195,13 +218,13 @@
 
             <article class="footer__social">
                 <div class="footer__logo">
-                    FLETNIX
+                    <a href="./index.html">Fletnix</a>
                 </div>
                 <div class="footer__rrss">
                     <ul>
-                        <li>F</li>
-                        <li>T</li>
-                        <li>I</li>
+                        <li><a href="#"><img src="./assets/img/logos/fb-logo_white.svg" alt="Fletnix Facebook page"></a></li>
+                        <li><a href="#"><img src="./assets/img/logos/tw-logo_white.svg" alt="Fletnix Twitter page"></a></li>
+                        <li><a href="#"><img src="./assets/img/logos/insta-logo_white.svg" alt="Fletnix Instagram page"></a></li>
                     </ul>
                 </div>
             </article>

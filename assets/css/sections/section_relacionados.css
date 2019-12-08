@@ -1,5 +1,5 @@
 .relacionados section.container__rel{
-    background-color: lightslategray;
+    background-color: var(--color-accent);
     padding-left: 15px;
     padding-right: 15px;
 }
