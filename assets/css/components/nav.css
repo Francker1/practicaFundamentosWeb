@@ -91,6 +91,16 @@ nav.nav{
 }
 
 
+.nav > .nav__list li:last-child{
+    margin-top: 2rem;
+}
+
+.nav > .nav__list li i{
+    font-size: 28px;
+    color: var(--color-primary);
+}
+
+
 #burger-checkbox:checked ~ .nav__list {
     display: flex;
 }
@@ -140,13 +150,11 @@ nav.nav{
     }
 
     .nav > .nav__list li:last-child{
-        margin-left: 2rem;
+        margin-top: unset;
+        margin-left: 1rem;
+        margin-right: 0;
     }
 
-    .nav > .nav__list li i{
-        font-size: 28px;
-        color: var(--color-primary);
-    }
 
     .nav .btn__login{
         width: fit-content;
