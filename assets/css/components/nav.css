@@ -85,7 +85,6 @@ nav.nav{
     margin: 0 0 1.5rem 0;
 }
 
-
 .nav > .nav__list > .nav__item a{
     color: var(--color-white-dark);
     text-decoration: none;
@@ -135,8 +134,18 @@ nav.nav{
         margin: 0 1.5rem 0 0;
     }
 
-    .nav > .nav__list li:hover{
+    .nav > .nav__list li:hover > a{
         cursor: pointer;
+        color: var(--color-primary);
+    }
+
+    .nav > .nav__list li:last-child{
+        margin-left: 2rem;
+    }
+
+    .nav > .nav__list li i{
+        font-size: 28px;
+        color: var(--color-primary);
     }
 
     .nav .btn__login{
