@@ -22,6 +22,16 @@
     position: relative;
 }
 
+.card__img i{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: .5rem;
+    margin-left: .5rem;
+    font-size: 2rem;
+    color: var(--color-primary);
+}
+
 .card > .card__link .card__content {
     display: none;
 }
