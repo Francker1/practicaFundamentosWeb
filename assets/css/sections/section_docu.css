@@ -6,8 +6,6 @@ section.sec__docu{
     flex-direction: column;
 }
 
-
-
 .docu__img,
 .docu__info{
     flex-basis: 50%;
@@ -15,14 +13,53 @@ section.sec__docu{
 
 .docu__img img{
     width: 100%;
-    height: inherit;
+    height: 100%;
 }
 
 .docu__info{
-    background-color: lightcoral;
-    padding: 1rem;
+    background-color: var(--color-primary);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 }
 
+.docu__info{
+    color: var(--color-accent);
+    font-weight: bold;
+}
+
+
+.docu__info > h3{
+    font-size: 2.5rem;
+    color: var(--color-accent);
+}
+
+.docu__info > p{
+    font-size: 1.5rem;
+}
+
+.docu__info dd{
+    margin-left: 0;
+}
+
+.btn__actions{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.btn__actions button{
+    background-color: var(--color-accent);
+    font-size: 1rem;
+    margin-right: 1rem;
+    padding: .5rem 2rem;
+    color: var(--color-white-dark);
+}
+
+.btn__actions button:hover{
+    background-color: var(--color-black-light);
+}
 
 @media all and (min-width: 768px){
 
@@ -31,7 +68,7 @@ section.sec__docu{
     }
 
     .docu__info{
-        padding: 2.5rem;
+        padding: 5rem;
     }
 }
 @media all and (min-width: 1024px){
