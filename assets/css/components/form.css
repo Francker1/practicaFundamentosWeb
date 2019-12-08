@@ -1,6 +1,5 @@
 section.form{
     margin: 5rem 0;
-    padding: 10rem 0;
 }
 
 .form > .form__container{
@@ -118,6 +117,11 @@ div.form__inputs  .form__group a{
 
 /* Mediaqueries */
 @media all and (min-width: 768px){
+
+
+    section.form{
+        padding: 10rem 0;
+    }
 
     .form > .form__container > .form__info{
         display: flex;

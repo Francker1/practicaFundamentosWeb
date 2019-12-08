@@ -27,19 +27,35 @@ section.figuras{
 
 /* Section para practicar posicionamientos, tomando como referencia coordenada 0/0 (esq superior izquierda) he ido
   jugando con cada caja*/
-.figuras_img_1{     top: 20.20%;    left: 4.20%;    width: 12.45%; }
-.figuras_img_2{     top: 9%;        left: 15.70%;   width: 9.25%; }
-.figuras_img_3{     top: 30%;       left: 22%;      width: 12%; }
-.figuras_img_4{     top: 70.5%;     left: 20%;      width: 15.25%; }
-.figuras_img_5{     top: 90.5%;     left: 33.5%;    width: 15%; }
-.figuras_img_6{     top: 50%;       left: 40.7%;    width: 25%}
-.figuras_img_7{     top: 52.5%;     left: 65%;      width: 10%; }
-.figuras_img_9{     top: 20%;       left: 60%;      width: 10%; }
-.figuras_img_10{    top: 65%;       left: 73%;      width: 15%; }
-.figuras_img_11{    top: 110%;       left: 85%;      width: 8%; }
-.figuras_img_12{    top: 130%;       left: 80%;      width: 5%; }
+.figuras_img_1{     top: 20.20%;    left: 4.20%;    width: 45%; }
+.figuras_img_2{     display: none; top: 9%;        left: 15.70%;   width: 9.25%; }
+.figuras_img_3{     top: 30%;       left: 22%;      width: 40%; }
+.figuras_img_4{     top: 70.5%;     left: 10%;      width: 22.25%; }
+.figuras_img_5{     top: 90.5%;     left: 55.5%;    width: 35%; }
+.figuras_img_6{     top: 50%;       left: 24.7%;    width: 45%}
+.figuras_img_7{     top: 52.5%;     left: 65%;      width: 30%; }
+.figuras_img_9{     top: 20%;       left: 60%;      width: 25%; }
+.figuras_img_10{    display: none; }
+.figuras_img_11{    display: none; }
+.figuras_img_12{    display: none; }
 
 
 .figuras_img_6{
     z-index: 5;
+}
+
+@media all and (min-width: 768px) {
+
+    .figuras_img_1{     top: 20.20%;    left: 4.20%;    width: 12.45%; }
+    .figuras_img_2{     display: block; top: 9%;        left: 15.70%;   width: 9.25%; }
+    .figuras_img_3{     top: 30%;       left: 22%;      width: 12%; }
+    .figuras_img_4{     top: 70.5%;     left: 20%;      width: 15.25%; }
+    .figuras_img_5{     top: 90.5%;     left: 33.5%;    width: 15%; }
+    .figuras_img_6{     top: 50%;       left: 40.7%;    width: 25%}
+    .figuras_img_7{     top: 52.5%;     left: 65%;      width: 10%; }
+    .figuras_img_9{     top: 20%;       left: 60%;      width: 10%; }
+    .figuras_img_10{    display: block; top: 65%;       left: 73%;      width: 15%; }
+    .figuras_img_11{    display: block; top: 110%;       left: 85%;      width: 8%; }
+    .figuras_img_12{    display: block; top: 130%;       left: 80%;      width: 5%; }
+
 }
